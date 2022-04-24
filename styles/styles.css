@@ -1,0 +1,449 @@
+/*----------------------- COLORS -----------------------*/
+
+:root {
+  --amarillo: #fab91c;
+  --azulOscuro: #17375c;
+  --azulClaro: #0082ca;
+  --rojo: #e42522;
+  --verde: #85bb25;
+  --negroTexto: #2b2b2b;
+  --negro: #424242;
+}
+
+/*---------------------- GENERALES ----------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*----------------------- HEADER ------------------------*/
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 30;
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+#logo-mobile {
+  margin: 10px 0 0 10px;
+  width: 64px;
+  height: 64px;
+}
+
+/*------------------------ INTRO ------------------------*/
+
+.intro {
+  margin: 100px auto 200px;
+  width: 70%;
+  max-width: 700px;
+  text-align: center;
+  font-family: "GOTHAM-MEDIUM";
+  font-size: 15px;
+  line-height: 25px;
+  position: relative;
+}
+
+.intro::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--rojo);
+  position: absolute;
+  top: -40px;
+  left: -20px;
+}
+
+.intro::after {
+  content: "";
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background-color: var(--azulClaro);
+  position: absolute;
+  top: -80px;
+  right: -15px;
+}
+
+.intro p:nth-child(1) {
+  color: var(--negroTexto);
+  position: relative;
+}
+
+.intro p:nth-child(1)::before {
+  content: "";
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  background-color: var(--azulOscuro);
+  position: absolute;
+  bottom: -180px;
+  left: -150px;
+}
+
+.intro p:nth-child(1)::after {
+  content: "";
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background-color: var(--amarillo);
+  position: absolute;
+  bottom: -80px;
+  right: -55px;
+}
+
+.intro p:nth-child(2) {
+  color: var(--rojo);
+  position: relative;
+}
+
+.intro p:nth-child(2)::after {
+  content: "";
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background-color: var(--verde);
+  position: absolute;
+  bottom: -100px;
+  right: 50px;
+}
+
+/*----------------------- ABOUT US -----------------------*/
+
+.about-us {
+  display: flex;
+  padding: 5px;
+}
+
+.about-us h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: right;
+  color: var(--azulClaro);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+}
+
+.about-us-content {
+  padding-left: 10px;
+}
+
+.about-us-content h3 {
+  text-align: center;
+  color: var(--azulOscuro);
+  font-family: "GOTHAM-MEDIUM";
+  margin-bottom: 20px;
+}
+
+.about-us-content h3:nth-of-type(2),
+.about-us-content h3:nth-of-type(3) {
+  margin: 40px 0 20px;
+}
+
+.about-us-content p {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.circling-div-p {
+  border-left: 1px solid var(--azulOscuro);
+  margin-top: 20px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.p-circle::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--amarillo);
+  position: absolute;
+  left: -8px;
+}
+.p-amarillo::before {
+  background-color: var(--amarillo);
+}
+.p-verde::before {
+  background-color: var(--verde);
+}
+.p-azulClaro::before {
+  background-color: var(--azulClaro);
+}
+
+/*---------------------- IMAGEN SIERRA ----------------------*/
+
+.imagen-sierra {
+  width: 100%;
+  height: 30vh;
+  background: url(../assets/images/sierra.jpg) left center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*------------------------ THE TEAM ------------------------*/
+
+.the-team {
+  margin: 0 auto;
+}
+
+.div-team {
+  margin: 40px 0;
+  display: flex;
+  padding: 5px;
+}
+
+.div-team h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: right;
+  color: var(--verde);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+}
+
+.div-team-content {
+  padding-left: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.div-team-content h3 {
+  text-align: center;
+  color: var(--azulOscuro);
+  font-family: "GOTHAM-MEDIUM";
+  margin-bottom: 20px;
+}
+
+.div-team-content p {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/*------------------------ THE TEAM ------------------------*/
+/*------------------------- SWIPER -------------------------*/
+
+.fotos-team {
+  text-align: center;
+}
+
+.fotos-team img {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px 0;
+}
+
+.fotos-team span {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/*---------------------- IMAGEN MAR ----------------------*/
+
+.imagen-mar {
+  width: 100%;
+  height: 30vh;
+  background: url(../assets/images/mar.jpg) left center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*----------------------- OUR VALUES ----------------------*/
+
+.our-values {
+  margin: 40px 0 50%;
+  position: relative;
+}
+
+.our-values-red::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: var(--rojo);
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  z-index: -1;
+}
+
+.our-values h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+  color: #ffffff;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+  padding: 10px 10px 70px 10px;
+  display: inline-block;
+}
+
+.our-values-red p {
+  font-family: "GOTHAM-LIGHT";
+  font-size: 12px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 20px;
+  display: inline-block;
+  max-width: 245px;
+}
+
+.values {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.values-container {
+  max-width: 200px;
+  padding-bottom: 40px;
+}
+
+.values-container h3{
+  font-family: "GOTHAM-MEDIUM";
+  font-size: 15px;
+}
+
+.values-item p{
+  display: inline-block;
+  max-width: 250px;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 12px;
+  text-align: left;
+}
+
+.red-paginator {
+  margin: 40px auto 10px;
+  display: inline-block;
+
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+/*---------------------- IMAGEN MARTE ----------------------*/
+
+.imagen-marte {
+  width: 100%;
+  height: 30vh;
+  background: url(../assets/images/marte.jpg) left center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*----------------------- CONTACT US ----------------------*/
+
+.contact-us {
+  margin: 0 auto;
+}
+
+.div-contact {
+  margin: 40px 0;
+  display: flex;
+  padding: 5px;
+}
+
+.contact-us h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: right;
+  color: var(--amarillo);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+}
+
+.contact-us-content {
+  text-align: center;
+  width: 100%;
+}
+
+.contact-us-content h3 {
+  text-align: center;
+  color: var(--azulOscuro);
+  font-family: "GOTHAM-MEDIUM";
+  margin-bottom: 20px;
+}
+
+.contact-us-content p {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+  line-height: 22px;
+  margin: 20px 5px 0px;
+}
+
+.contact-us-content a {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+  font-weight: 1000;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+/*----------------------- FOOTER ----------------------*/
+
+footer {
+  background-color: var(--negro)
+}
+
+.flex-container-footer {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container-footer img{
+  width: 50%;
+  max-width: 230px;
+}
+
+.div-lista-footer ul{
+  border-left: 0.5px solid #ffffff;
+}
+
+.div-lista-footer ul li{
+  list-style: none;
+  padding: 0px 7px 7px 15px;
+  margin-top: 10px;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 2px;
+}
+
+.div-lista-footer ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+footer p {
+  color: #ffffff;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 13px;
+  line-height: 15px;
+  margin: 15px 5px 0px;
+  padding-bottom: 7px;
+  text-align: center;
+}

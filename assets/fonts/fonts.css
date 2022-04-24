@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "GOTHAM-BOLD";
+  src: url("GOTHAM-BOLD.ttf");
+  font-weight: none;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GOTHAM-BOLDITALIC";
+  src: url("GOTHAM-BOLDITALIC.ttf");
+  font-weight: none;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GOTHAM-LIGHT";
+  src: url("GOTHAM-LIGHT.ttf");
+  font-weight: none;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GOTHAM-LIGHTITALIC";
+  src: url("GOTHAM-LIGHTITALIC.ttf");
+  font-weight: none;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GOTHAM-MEDIUM";
+  src: url("GOTHAM-MEDIUM.ttf");
+}
+
+@font-face {
+  font-family: "GOTHAM-MEDIUMITALIC";
+  src: url("GOTHAM-MEDIUMITALIC.ttf");
+  font-weight: none;
+  font-style: normal;
+}

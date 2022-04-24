@@ -1,0 +1,50 @@
+/*============ BOTÓN HAMBURGUESA ============*/
+/* ESTATICO HAMBURGUESA */
+
+#hamburger {
+  padding: 25px 0px 20px 20px;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger {
+  min-height: 20px;
+  max-width: 50px;
+  margin-right: 60px;
+}
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  background-color: var(--azulOscuro);
+  position: absolute;
+  width: 30px;
+  height: 2.5px;
+  border-radius: 25px;
+  content: "";
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+.hamburger-inner:before {
+  top: 10px;
+}
+.hamburger-inner:after {
+  top: 20px;
+}
+
+/* CONVERSION A CRUZ*/
+
+.hamburger.open .hamburger-inner {
+  transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.hamburger.open .hamburger-inner:after {
+  display: none;
+}
+.hamburger.open .hamburger-inner:before {
+  transform: translate3d(0, -9px, 0) rotate(90deg);
+}
