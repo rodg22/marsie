@@ -15,7 +15,21 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   slidesPerView: 1,
   autoplay: {
-    delay: 2500,
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".valuesSwiper", {
+  spaceBetween: 0,
+  centeredSlides: true,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
