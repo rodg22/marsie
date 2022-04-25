@@ -28,6 +28,7 @@ var swiper = new Swiper(".valuesSwiper", {
   spaceBetween: 0,
   centeredSlides: true,
   slidesPerView: 1,
+  loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
