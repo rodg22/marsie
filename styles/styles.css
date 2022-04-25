@@ -35,20 +35,20 @@ section {
 header {
   position: sticky;
   top: 0px;
-  height: 70px;
+  height: 60px;
   z-index: 30;
   background-color: rgba(250, 250, 250, 0.95);
 }
 
 #logo-mobile {
-  padding-top: 5px;
+  padding-top: 10px;
   margin: 10px 0 0 10px;
-  width: 64px;
-  height: 64px;
+  width: 150px;
+  height: 150px;
 }
 
 #logo-mobile img{
-  width: 75%;
+  width: 100%;
 }
 
 /*------------------------ INTRO ------------------------*/
@@ -272,13 +272,14 @@ header {
   width: 100%;
   height: 60vh;
   background: url(../assets/images/mar.jpg) left center no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 /*----------------------- OUR VALUES ----------------------*/
 
 .our-values {
-  margin: 130px auto 130px;
+  margin: 210px auto 210px;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -287,13 +288,13 @@ header {
 
 .our-values::before {
   content: "";
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -60px;
-  left: calc(50% -200px);
+  top: -170px;
+  left: calc(50% - 450px);
   z-index: -1;
 }
 
@@ -314,7 +315,7 @@ header {
   color: #ffffff;
   padding: 20px;
   display: inline-block;
-  max-width: 245px;
+  max-width: 75vw;
   display: none;
 }
 
@@ -334,6 +335,7 @@ header {
   font-family: "GOTHAM-MEDIUM";
   font-size: 15px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .values-item p{
