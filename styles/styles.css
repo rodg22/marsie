@@ -208,7 +208,7 @@ header {
 .imagen-sierra {
   width: 100%;
   height: 60vh;
-  background: url(../assets/images/sierra.jpg) right center no-repeat;
+  background: url(../assets/images/sierra-mobile.png) right center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -280,7 +280,7 @@ header {
 .imagen-mar {
   width: 100%;
   height: 60vh;
-  background: url(../assets/images/mar.jpg) left center no-repeat;
+  background: url(../assets/images/mar-mobile.png) left center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
