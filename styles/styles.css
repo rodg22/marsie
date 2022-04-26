@@ -367,7 +367,7 @@ header {
 .imagen-marte {
   width: 100%;
   height: 60vh;
-  background: url(../assets/images/marte.jpg) center center no-repeat;
+  background: url(../assets/images/marte-mobile.png) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
