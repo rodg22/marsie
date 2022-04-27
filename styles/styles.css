@@ -28,6 +28,17 @@ body {
 
 section {
   padding-right: 12px;
+  position: relative;
+}
+
+section h2{
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+section[id] {
+  scroll-margin-top: 70px;
 }
 
 /*----------------------- HEADER ------------------------*/
@@ -41,6 +52,9 @@ header {
 }
 
 #logo-mobile {
+  position: absolute;
+  top: -5px;
+  left: 10px;
   padding-top: 10px;
   margin: 10px 0 0 10px;
   width: 150px;
@@ -49,6 +63,86 @@ header {
 
 #logo-mobile img{
   width: 100%;
+}
+
+/*========= MENU =========*/
+
+.menu {
+    display: none;
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    bottom: calc(-100vh + 60px);
+    width: 100%;
+    height: calc(100vh - 60px);
+    transition: transform 0.3s;
+    z-index: 15;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li{
+  font-family: "GOTHAM-MEDIUM";
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 16px;
+}
+
+.menu ul li a{
+  margin: 0 0 0 30px;
+  padding: 30px 10px 10px 0px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu ul li a:hover{
+  color: var(--amarillo);
+}
+
+/*====== CIRCLE MENU =====*/
+
+.menu-bg {
+	top: 0;
+	right: -20px;
+	position: absolute;
+	z-index: 15;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background-color: var(--azulOscuro);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+
+.blured-bg {
+	top: 0;
+	right: 0px;
+	position: absolute;
+	z-index: 10;
+	width: 0;
+	height: 0;
+  backdrop-filter: blur(2px);
+	background-color: rgba(250, 250, 250, 0.1);
+}
+
+.change-bg{
+	width: 700px;
+	height: 700px;
+	transform: translate(50%,-50%);
+}
+
+.change-to-blured{
+	width: 100vw;
+	height: 100vh;
+}
+
+.change{
+	display: block;
 }
 
 /*------------------------ INTRO ------------------------*/
@@ -208,7 +302,7 @@ header {
 .imagen-sierra {
   width: 100%;
   height: 60vh;
-  background: url(../assets/images/sierra-mobile.png) right center no-repeat;
+  background: url(../assets/images/sierra-mobile.png) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -288,7 +382,7 @@ header {
 /*----------------------- OUR VALUES ----------------------*/
 
 .our-values {
-  margin: 210px auto 210px;
+  margin: 210px auto 270px;
   position: relative;
   display: flex;
   align-items: flex-start;
