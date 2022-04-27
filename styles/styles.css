@@ -28,13 +28,6 @@ body {
 
 section {
   padding-right: 12px;
-  position: relative;
-}
-
-section h2{
-  position: sticky;
-  top: 0px;
-  left: 0px;
 }
 
 section[id] {

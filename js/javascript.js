@@ -1,4 +1,4 @@
-// --------------------- MENU HAMBURGUESA ----------------------
+const d = document;
 const $hamburger = document.getElementById("hamburger");
 const $main = document.querySelector("main");
 const $hamburgerClass = document.querySelector(".hamburger");
@@ -7,21 +7,23 @@ const $linkMenu = document.querySelectorAll(".menu ul li a");
 const $circleMenu = document.getElementById("menu-bg");
 const $blurMenu = document.getElementById("menu-blur");
 
-$hamburger.addEventListener("click", () => {
-  $hamburgerClass.classList.toggle("open");
-  $menuClass.classList.toggle("change");
-  $circleMenu.classList.toggle("change-bg");
-  // $blurMenu.classList.toggle("change-to-blured");
-});
-
-$linkMenu.forEach((e) =>
-  e.addEventListener("click", () => {
+d.addEventListener("DOMContentLoaded", () => {
+  $hamburger.addEventListener("click", () => {
     $hamburgerClass.classList.toggle("open");
     $menuClass.classList.toggle("change");
     $circleMenu.classList.toggle("change-bg");
     // $blurMenu.classList.toggle("change-to-blured");
-  })
-);
+  });
+
+  $linkMenu.forEach((e) =>
+    e.addEventListener("click", () => {
+      $hamburgerClass.classList.toggle("open");
+      $menuClass.classList.toggle("change");
+      $circleMenu.classList.toggle("change-bg");
+      // $blurMenu.classList.toggle("change-to-blured");
+    })
+  );
+});
 
 // --------------------- SWIPER FOUNDERS ----------------------
 
