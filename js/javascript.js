@@ -11,7 +11,7 @@ $hamburger.addEventListener("click", () => {
   $hamburgerClass.classList.toggle("open");
   $menuClass.classList.toggle("change");
   $circleMenu.classList.toggle("change-bg");
-  $blurMenu.classList.toggle("change-to-blured");
+  // $blurMenu.classList.toggle("change-to-blured");
 });
 
 $linkMenu.forEach((e) =>
@@ -19,7 +19,7 @@ $linkMenu.forEach((e) =>
     $hamburgerClass.classList.toggle("open");
     $menuClass.classList.toggle("change");
     $circleMenu.classList.toggle("change-bg");
-    $blurMenu.classList.toggle("change-to-blured");
+    // $blurMenu.classList.toggle("change-to-blured");
   })
 );
 
