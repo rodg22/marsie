@@ -3,7 +3,7 @@
 :root {
   --amarillo: #fab91c;
   --azulOscuro: #17375c;
-  --azulClaro: #0082ca;
+  --celeste: #0082ca;
   --rojo: #e42522;
   --verde: #85bb25;
   --negroTexto: #2b2b2b;
@@ -142,7 +142,7 @@ header {
 /*------------------------ INTRO ------------------------*/
 
 .intro {
-  margin: 100px auto 200px;
+  margin: 160px auto 200px;
   width: 72%;
   max-width: 700px;
   text-align: center;
@@ -169,7 +169,7 @@ header {
   width: 69px;
   height: 69px;
   border-radius: 50%;
-  background-color: var(--azulClaro);
+  background-color: var(--celeste);
   position: absolute;
   top: -80px;
   right: -15px;
@@ -229,7 +229,7 @@ header {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-align: right;
-  color: var(--azulClaro);
+  color: var(--celeste);
   font-family: "GOTHAM-LIGHT";
   font-size: 15px;
 }
@@ -287,8 +287,8 @@ header {
 .p-verde::before {
   background-color: var(--verde);
 }
-.p-azulClaro::before {
-  background-color: var(--azulClaro);
+.p-celeste::before {
+  background-color: var(--celeste);
 }
 
 /*---------------------- IMAGEN SIERRA ----------------------*/
@@ -305,6 +305,7 @@ header {
 
 .the-team {
   margin: 0 auto 40px;
+  position: relative;
 }
 
 .div-team {
@@ -340,6 +341,47 @@ header {
   font-family: "GOTHAM-LIGHT";
   font-size: 15px;
   line-height: 22px;
+}
+
+.team-member {
+  text-decoration: none;
+}
+
+/*------------------------ THE TEAM ------------------------*/
+/*------------------------- MODAL --------------------------*/
+
+.team-modal-child {
+  display: none;
+}
+
+.visible-member {
+  display: block;
+}
+
+.team-modal-child > span{
+  color: white;
+}
+
+.team-modal-child h4{
+  font-size: 30px;
+  font-family: "GOTHAM-MEDIUM";
+}
+
+.team-modal-child P{
+  font-size: 12px;
+  font-family: "GOTHAM-LIGHT";
+  line-height: 16px;
+}
+
+.modal-amarillo {
+  height: 80vh;
+  width: 90%;
+  background-color: var(--amarillo);
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 35;
+  border-radius: 30px 0px 0px 30px;
 }
 
 /*------------------------ THE TEAM ------------------------*/

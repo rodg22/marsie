@@ -9,6 +9,10 @@
   z-index: 30;
 }
 
+#hamburger:active {
+  background-color: white;
+}
+
 #hamburger:hover {
   cursor: pointer;
 }
