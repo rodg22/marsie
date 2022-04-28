@@ -352,6 +352,7 @@ header {
 
 .team-modal-child {
   display: none;
+  padding: 10px;
 }
 
 .visible-member {
@@ -360,22 +361,24 @@ header {
 
 .team-modal-child > span{
   color: white;
+  margin-bottom: 25px;
 }
 
 .team-modal-child h4{
   font-size: 30px;
   font-family: "GOTHAM-MEDIUM";
+  margin-bottom: 10px;
 }
 
 .team-modal-child P{
-  font-size: 12px;
+  font-size: 14px;
   font-family: "GOTHAM-LIGHT";
   line-height: 16px;
 }
 
 .modal-amarillo {
-  height: 80vh;
-  width: 90%;
+  height: 90vh;
+  width: 95%;
   background-color: var(--amarillo);
   position: absolute;
   right: 0;
