@@ -418,7 +418,7 @@ header {
 }
 
 .text-slide {
-  height: 600px;
+  min-height: 560px;
 }
 
 .textSwiper {
