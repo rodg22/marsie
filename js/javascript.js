@@ -66,6 +66,21 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// ------------------- SWIPER FOUNDERS TEXT --------------------
+
+var swiper = new Swiper(".textSwiper", {
+  spaceBetween: 0,
+  centeredSlides: true,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 // ---------------------- SWIPER VALUES -----------------------
 
 var swiper = new Swiper(".valuesSwiper", {
