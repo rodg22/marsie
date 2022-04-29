@@ -417,6 +417,10 @@ header {
   color: white;
 }
 
+.text-slide {
+  height: 600px;
+}
+
 .textSwiper {
   margin: 10px auto 10px;
 }
