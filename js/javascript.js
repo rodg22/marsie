@@ -1,4 +1,5 @@
 const d = document;
+const $body = d.querySelector("body");
 const $hamburger = d.getElementById("hamburger");
 const $main = d.querySelector("main");
 const $hamburgerClass = d.querySelector(".hamburger");
@@ -34,8 +35,8 @@ d.addEventListener("DOMContentLoaded", () => {
         const miembroSlider = link.querySelector("span").innerText;
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
-          // alert(`El miembro seleccionado es ${miembroModal}`);
           member.classList.add("visible-member");
+          $blurMenu.classList.add("change-to-blured");
         }
       });
     })
@@ -45,6 +46,7 @@ d.addEventListener("DOMContentLoaded", () => {
     arrow.addEventListener("click", () => {
       $modalMember.forEach((member) => {
         member.classList.remove("visible-member");
+        $blurMenu.classList.remove("change-to-blured");
       });
     });
   });

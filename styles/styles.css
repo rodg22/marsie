@@ -26,6 +26,11 @@ body {
   overflow-x: hidden;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 section {
   padding-right: 12px;
 }
@@ -350,6 +355,11 @@ header {
 /*------------------------ THE TEAM ------------------------*/
 /*------------------------- MODAL --------------------------*/
 
+.arrow-out-modal {
+  margin-left: 10px;
+  padding-left: 5px;
+}
+
 .arrow-out-modal:hover {
   cursor: pointer;
 }
@@ -358,7 +368,7 @@ header {
   display: none;
   padding: 17px;
   height: 90vh;
-  width: 95%;
+  width: 99%;
   position: absolute;
   right: 0;
   top: 10px;
@@ -404,6 +414,7 @@ header {
 
 .modal-celeste {
   background-color: var(--celeste);
+  color: white;
 }
 
 .textSwiper {
