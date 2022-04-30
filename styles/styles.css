@@ -369,7 +369,7 @@ header {
   padding: 17px;
   height: 90vh;
   width: 99%;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 10px;
   z-index: 35;
