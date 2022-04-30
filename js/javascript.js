@@ -11,6 +11,18 @@ const $teamMembers = d.querySelectorAll(".team-member");
 const $modalMember = d.querySelectorAll(".team-modal-child");
 const $modalArrows = d.querySelectorAll(".arrow-out-modal");
 
+function disable_scroll() {
+  d.ontouchmove = function (e) {
+    e.preventDefault();
+  };
+}
+
+function enable_scroll() {
+  d.ontouchmove = function (e) {
+    return true;
+  };
+}
+
 d.addEventListener("DOMContentLoaded", () => {
   $hamburger.addEventListener("click", () => {
     $hamburgerClass.classList.toggle("open");
@@ -38,6 +50,7 @@ d.addEventListener("DOMContentLoaded", () => {
           member.classList.add("visible-member");
           $blurMenu.classList.add("change-to-blured");
           $body.classList.add("stop-scrolling");
+          disable_scroll();
         }
       });
     })
@@ -49,6 +62,7 @@ d.addEventListener("DOMContentLoaded", () => {
         member.classList.remove("visible-member");
         $blurMenu.classList.remove("change-to-blured");
         $body.classList.remove("stop-scrolling");
+        enable_scroll();
       });
     });
   });
