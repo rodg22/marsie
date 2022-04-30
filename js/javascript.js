@@ -37,6 +37,7 @@ d.addEventListener("DOMContentLoaded", () => {
         if (miembroModal === miembroSlider) {
           member.classList.add("visible-member");
           $blurMenu.classList.add("change-to-blured");
+          $body.classList.add("stop-scrolling");
         }
       });
     })
@@ -47,6 +48,7 @@ d.addEventListener("DOMContentLoaded", () => {
       $modalMember.forEach((member) => {
         member.classList.remove("visible-member");
         $blurMenu.classList.remove("change-to-blured");
+        $body.classList.remove("stop-scrolling");
       });
     });
   });
