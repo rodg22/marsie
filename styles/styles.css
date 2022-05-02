@@ -417,11 +417,11 @@ header {
 }
 
 .text-slide {
-  min-height: 560px;
+  min-height: 550px;
 }
 
 .textSwiper {
-  margin: 10px auto 10px;
+  margin: 10px auto 0px;
 }
 
 .modal-paginator {
