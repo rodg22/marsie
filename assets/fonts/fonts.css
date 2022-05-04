@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "GOTHAM-LIGHT";
-  src: url("GOTHAM-LIGHT.ttf");
+  src: url("/assets/fonts/GOTHAM-LIGHT.TTF");
   font-weight: none;
   font-style: normal;
 }
@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: "GOTHAM-MEDIUM";
-  src: url("GOTHAM-MEDIUM.ttf");
+  src: url("/assets/fonts/GOTHAM-MEDIUM.TTF");
 }
 
 @font-face {
