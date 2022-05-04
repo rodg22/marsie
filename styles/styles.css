@@ -481,13 +481,13 @@ header {
 
 .our-values::before {
   content: "";
-  width: 600px;
-  height: 600px;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -170px;
-  left: calc(50% - 420px);
+  top: -110px;
+  left: calc(50% - 250px);
   z-index: -1;
 }
 
@@ -508,7 +508,7 @@ header {
   color: #ffffff;
   padding: 20px;
   display: inline-block;
-  max-width: 75vw;
+  max-width: 65vw;
   display: none;
 }
 
