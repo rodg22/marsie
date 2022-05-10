@@ -170,7 +170,7 @@ header {
   background-color: var(--rojo);
   position: absolute;
   top: -130px;
-  left: 0px;
+  left: 20px;
 }
 
 .intro::after {
