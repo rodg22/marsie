@@ -196,7 +196,7 @@ header {
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -360px;
+  bottom: -340px;
   left: -135px;
 }
 
@@ -207,7 +207,7 @@ header {
   border-radius: 50%;
   background-color: var(--amarillo);
   position: absolute;
-  bottom: -185px;
+  bottom: -165px;
   right: -50px;
 }
 
