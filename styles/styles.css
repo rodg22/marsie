@@ -85,7 +85,7 @@ header {
 
 .menu ul li{
   font-family: "GOTHAM-MEDIUM";
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 3px;
   line-height: 16px;
 }
@@ -150,6 +150,7 @@ header {
   margin: 160px auto 200px;
   width: 72%;
   max-width: 700px;
+  min-height: 100vh;
   text-align: center;
   font-family: "GOTHAM-MEDIUM";
   font-size: 17px;
@@ -227,7 +228,7 @@ header {
 
 .about-us {
   display: flex;
-  padding: 5px;
+  padding: 5px 20px 5px 5px;
 }
 
 .about-us h2 {
@@ -240,7 +241,7 @@ header {
 }
 
 .about-us-content {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .about-us-content h3 {
@@ -258,7 +259,7 @@ header {
 .about-us-content > p {
   color: var(--negroTexto);
   font-family: "GOTHAM-LIGHT";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   text-align: center;
 }
@@ -266,7 +267,7 @@ header {
 .about-us-content p {
   color: var(--negroTexto);
   font-family: "GOTHAM-LIGHT";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -343,7 +344,7 @@ header {
 .div-team-content p {
   color: var(--negroTexto);
   font-family: "GOTHAM-LIGHT";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -390,14 +391,14 @@ header {
   margin-bottom: 10px;
 }
 
-.team-modal-child P{
-  font-size: 14px;
+.team-modal-child p{
+  font-size: 16px;
   font-family: "GOTHAM-LIGHT";
   line-height: 17px;
 }
 
 .team-modal-child a{
-  font-size: 14px;
+  font-size: 16px;
   font-family: "GOTHAM-LIGHT";
   line-height: 17px;
   color: white;
@@ -454,7 +455,7 @@ header {
 .fotos-team span {
   color: var(--negroTexto);
   font-family: "GOTHAM-LIGHT";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   display: block;
 }
@@ -503,7 +504,7 @@ header {
 
 .our-values-red p {
   font-family: "GOTHAM-LIGHT";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   color: #ffffff;
   padding: 20px;
@@ -533,7 +534,7 @@ header {
 
 .values-item p{
   font-family: "GOTHAM-LIGHT";
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -592,7 +593,7 @@ header {
 .contact-us-content p {
   color: var(--negroTexto);
   font-family: "GOTHAM-LIGHT";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   margin: 20px 5px 0px;
 }
@@ -600,7 +601,7 @@ header {
 .contact-us-content a {
   color: var(--negroTexto);
   font-family: "GOTHAM-LIGHT";
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 1000;
   line-height: 22px;
   text-decoration: none;
@@ -638,7 +639,7 @@ footer {
   padding: 0px 0px 7px 10px;
   margin-top: 10px;
   font-family: "GOTHAM-LIGHT";
-  font-size: 10px;
+  font-size: 11px;
   line-height: 15px;
   letter-spacing: 2px;
 }
@@ -652,7 +653,7 @@ footer {
 footer p {
   color: #ffffff;
   font-family: "GOTHAM-LIGHT";
-  font-size: 13px;
+  font-size: 14px;
   line-height: 15px;
   margin: 15px 5px 0px;
   padding-bottom: 7px;
@@ -662,8 +663,8 @@ footer p {
 .privacy-policy {
   color: #ffffff;
   font-family: "GOTHAM-LIGHT";
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 16px;
   margin: 0px auto;
   text-align: center;
   text-decoration: none;
