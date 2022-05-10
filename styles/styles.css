@@ -159,7 +159,7 @@ header {
   font-weight: bold;
   line-height: 26px;
   position: relative;
-  transform: translateY(30%);
+  transform: translateY(35%);
 }
 
 .intro::before {
@@ -196,7 +196,7 @@ header {
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -340px;
+  bottom: -330px;
   left: -135px;
 }
 
@@ -207,7 +207,7 @@ header {
   border-radius: 50%;
   background-color: var(--amarillo);
   position: absolute;
-  bottom: -165px;
+  bottom: -155px;
   right: -75px;
 }
 
@@ -224,7 +224,7 @@ header {
   border-radius: 50%;
   background-color: var(--verde);
   position: absolute;
-  bottom: -240px;
+  bottom: -230px;
   right: 50px;
 }
 
