@@ -47,7 +47,8 @@ header {
   width: 100%;
   height: 60px;
   z-index: 30;
-  background-color: rgba(250, 250, 250, 0.95);
+  background-color: rgba(250, 250, 250, 0.7);
+  /* backdrop-filter: blur(2px); */
 }
 
 #logo-mobile {
@@ -122,10 +123,10 @@ header {
 	top: 0;
 	right: 0px;
 	position: absolute;
-	z-index: 10;
+  backdrop-filter: blur(2px);
+  z-index: 10;
 	width: 0;
 	height: 0;
-  backdrop-filter: blur(2px);
 	background-color: rgba(250, 250, 250, 0.1);
 }
 
@@ -168,7 +169,7 @@ header {
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -50px;
+  top: -150px;
   left: 0px;
 }
 
@@ -179,7 +180,7 @@ header {
   border-radius: 50%;
   background-color: var(--celeste);
   position: absolute;
-  top: -110px;
+  top: -180px;
   right: 5px;
 }
 
@@ -195,7 +196,7 @@ header {
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -240px;
+  bottom: -360px;
   left: -135px;
 }
 
@@ -206,7 +207,7 @@ header {
   border-radius: 50%;
   background-color: var(--amarillo);
   position: absolute;
-  bottom: -115px;
+  bottom: -185px;
   right: -50px;
 }
 
@@ -223,7 +224,7 @@ header {
   border-radius: 50%;
   background-color: var(--verde);
   position: absolute;
-  bottom: -140px;
+  bottom: -240px;
   right: 60px;
 }
 

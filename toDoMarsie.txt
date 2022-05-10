@@ -19,6 +19,8 @@ O tal vez deban los section titles estar más arriba del propio texto.
 
 -------------------------------------------------------------- Done -------------------------------------------------------------------------------------
 
+-Agregar un Blur cuando el texto pasa atras del header
+
 -Fonts type incorrecta
 
 -Font size muy pequeña
