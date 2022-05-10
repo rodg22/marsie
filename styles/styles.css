@@ -148,38 +148,39 @@ header {
 
 .intro {
   margin: auto;
-  width: 72%;
+  padding-right: 0px;
+  width: 80%;
   max-width: 700px;
   min-height: 100vh;
   text-align: center;
   font-family: "GOTHAM-MEDIUM";
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 25px;
+  line-height: 26px;
   position: relative;
   transform: translateY(30%);
 }
 
 .intro::before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -40px;
-  left: -20px;
+  top: -50px;
+  left: 0px;
 }
 
 .intro::after {
   content: "";
-  width: 69px;
-  height: 69px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: var(--celeste);
   position: absolute;
-  top: -80px;
-  right: -15px;
+  top: -110px;
+  right: 5px;
 }
 
 .intro p:nth-child(1) {
@@ -189,47 +190,48 @@ header {
 
 .intro p:nth-child(1)::before {
   content: "";
-  width: 172px;
-  height: 172px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -180px;
-  left: -150px;
+  bottom: -240px;
+  left: -135px;
 }
 
 .intro p:nth-child(1)::after {
   content: "";
-  width: 69px;
-  height: 69px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: var(--amarillo);
   position: absolute;
-  bottom: -80px;
-  right: -55px;
+  bottom: -115px;
+  right: -50px;
 }
 
 .intro p:nth-child(2) {
   color: var(--rojo);
   position: relative;
+  margin-top: 15px;
 }
 
 .intro p:nth-child(2)::after {
   content: "";
-  width: 69px;
-  height: 69px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: var(--verde);
   position: absolute;
-  bottom: -100px;
-  right: 50px;
+  bottom: -140px;
+  right: 60px;
 }
 
 /*----------------------- ABOUT US -----------------------*/
 
 .about-us {
   display: flex;
-  padding: 5px 20px 5px 5px;
+  padding: 0px 20px 5px 5px;
 }
 
 .about-us h2 {
