@@ -242,7 +242,6 @@ header {
   color: var(--celeste);
   font-family: "GOTHAM-LIGHT";
   font-size: 15px;
-  margin-right: 5px;
 }
 
 .about-us-content {
@@ -505,7 +504,6 @@ header {
   font-size: 15px;
   padding: 10px 10px 35px 10px;
   display: inline-block;
-  margin-right: 5px;
 }
 
 .our-values-red p {
@@ -582,7 +580,6 @@ header {
   color: var(--amarillo);
   font-family: "GOTHAM-LIGHT";
   font-size: 15px;
-  margin-right: 5px;
 }
 
 .contact-us-content {
