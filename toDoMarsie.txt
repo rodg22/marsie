@@ -23,4 +23,4 @@ O tal vez deban los section titles estar más arriba del propio texto.
 
 -Font size muy pequeña
 
--Márgenes derechos angostos / texto no centrado
+-Márgenes derechos angostos / texto no centrado.
