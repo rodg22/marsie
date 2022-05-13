@@ -148,7 +148,7 @@ header {
 
 .intro {
   margin: auto;
-  width: 85%;
+  width: 90%;
   max-width: 700px;
   min-height: 100vh;
   text-align: center;
@@ -195,7 +195,7 @@ header {
   background-color: var(--azulOscuro);
   position: absolute;
   bottom: -330px;
-  left: -150px;
+  left: -115px;
 }
 
 .intro p:nth-child(1)::after {
@@ -206,7 +206,7 @@ header {
   background-color: var(--amarillo);
   position: absolute;
   bottom: -170px;
-  right: -40px;
+  right: -30px;
 }
 
 .intro p:nth-child(2) {
