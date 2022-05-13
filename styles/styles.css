@@ -153,9 +153,9 @@ header {
   min-height: 100vh;
   text-align: center;
   font-family: "GOTHAM-MEDIUM";
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 25px;
+  line-height: 26px;
   position: relative;
   transform: translateY(35%)
 }
@@ -167,7 +167,7 @@ header {
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -40px;
+  top: -100px;
   left: -20px;
 }
 
@@ -178,7 +178,7 @@ header {
   border-radius: 50%;
   background-color: var(--celeste);
   position: absolute;
-  top: -80px;
+  top: -140px;
   right: -15px;
 }
 
@@ -194,7 +194,7 @@ header {
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -180px;
+  bottom: -330px;
   left: -150px;
 }
 
@@ -205,7 +205,7 @@ header {
   border-radius: 50%;
   background-color: var(--amarillo);
   position: absolute;
-  bottom: -80px;
+  bottom: -170px;
   right: -55px;
 }
 
@@ -221,8 +221,8 @@ header {
   border-radius: 50%;
   background-color: var(--verde);
   position: absolute;
-  bottom: -100px;
-  right: 50px;
+  bottom: -230px;
+  right: 60px;
 }
 
 /*----------------------- ABOUT US -----------------------*/
