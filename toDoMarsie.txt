@@ -1,8 +1,5 @@
 ------------------------------------------------------------- To Do ------------------------------------------------------------------------------------
 
--Esperaría ver la sección HOME cubrir casi toda la pantalla al entrar a la web, pero se ve mucho texto de ABOUT US, 
-tal vez solucionando 2 esto ya quede mejor?
-
 -Section titles (ABOUT US) en mal posicionamiento. La versión vertical tal vez no funciona bien en mobile?
 O tal vez deban los section titles estar más arriba del propio texto.
 
@@ -24,3 +21,6 @@ O tal vez deban los section titles estar más arriba del propio texto.
 -Font size muy pequeña
 
 -Márgenes derechos angostos / texto no centrado.
+
+-Esperaría ver la sección HOME cubrir casi toda la pantalla al entrar a la web, pero se ve mucho texto de ABOUT US, 
+tal vez solucionando 2 esto ya quede mejor?
