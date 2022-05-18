@@ -371,7 +371,7 @@ header {
 
 .team-modal-child {
   display: none;
-  padding: 17px;
+  padding: 30px;
   height: 90vh;
   width: 99%;
   position: fixed;
@@ -401,6 +401,7 @@ header {
   font-size: 16px;
   font-family: "GOTHAM-LIGHT";
   line-height: 17px;
+  margin-bottom: 22px;
 }
 
 .team-modal-child a{
