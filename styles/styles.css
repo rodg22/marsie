@@ -365,6 +365,10 @@ header {
   cursor: pointer;
 }
 
+#team-modal-container {
+  text-align: left;
+}
+
 .team-modal-child {
   display: none;
   padding: 17px;
@@ -375,6 +379,7 @@ header {
   top: 10px;
   z-index: 35;
   border-radius: 30px 0px 0px 30px;
+  overflow-y: scroll;
 }
 
 .visible-member {
@@ -472,40 +477,27 @@ header {
   margin-bottom: 40px;
 }
 
-.member1-circle {
+.circle {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  border: 1px solid var(--amarillo);
   position: absolute;
   top: 42px;
   right: 10px;
   z-index: -10;
   margin: 0 auto;
+}
+
+.member1-circle {
+  border: 1px solid var(--amarillo);
 }
 
 .member2-circle {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
   border: 1px solid var(--verde);
-  position: absolute;
-  top: 42px;
-  right: 10px;
-  z-index: -10;
-  margin: 0 auto;
 }
 
 .member3-circle {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
   border: 1px solid var(--celeste);
-  position: absolute;
-  top: 42px;
-  right: 10px;
-  z-index: -10;
-  margin: 0 auto;
 }
 
 

@@ -1,12 +1,4 @@
-------------------------------------------------------------- To Do ------------------------------------------------------------------------------------
-
--Completar el circulo de founder del color de fondo (en hover)
-
--Section titles (ABOUT US) en mal posicionamiento. La versión vertical tal vez no funciona bien en mobile?
-O tal vez deban los section titles estar más arriba del propio texto.
-
--Sección founders creo que no está resuelto de forma óptima para Mobile. Yo pondría los 3 estáticos en una misma screen o uno abajo del otro.
-(uso de modelo el ejemplo que les compartí antes de Atlassian)
+------------------------------------------------------------- To Do EASY---------------------------------------------------------------------------------
 
 -BIOS, idem 6. El scroll creo en mobile quedaría mejor vertical que horizontal (ver ejemplo Atlassian). Faltan los saltos y espaciado entre párrafos. 
 
@@ -15,6 +7,15 @@ O tal vez deban los section titles estar más arriba del propio texto.
 -Sección OUR VALUES se pierde el texto en el círculo tan grande
 
 -Agregar el texto de Privacy Policy
+
+------------------------------------------------------------- To Do HARD---------------------------------------------------------------------------------
+
+-Section titles (ABOUT US) en mal posicionamiento. La versión vertical tal vez no funciona bien en mobile? (OJO IPHONE)
+O tal vez deban los section titles estar más arriba del propio texto.
+
+
+
+
 
 -------------------------------------------------------------- Done -------------------------------------------------------------------------------------
 
@@ -26,3 +27,8 @@ O tal vez deban los section titles estar más arriba del propio texto.
 
 -Esperaría ver la sección HOME cubrir casi toda la pantalla al entrar a la web, pero se ve mucho texto de ABOUT US, 
 tal vez solucionando 2 esto ya quede mejor?
+
+-Completar el circulo de founder del color de fondo (en hover)
+
+-Sección founders creo que no está resuelto de forma óptima para Mobile. Yo pondría los 3 estáticos en una misma screen o uno abajo del otro.
+(uso de modelo el ejemplo que les compartí antes de Atlassian)
