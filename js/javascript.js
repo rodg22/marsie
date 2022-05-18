@@ -10,6 +10,10 @@ const $blurMenu = d.getElementById("menu-blur");
 const $teamMembers = d.querySelectorAll(".team-member");
 const $modalMember = d.querySelectorAll(".team-modal-child");
 const $modalArrows = d.querySelectorAll(".arrow-out-modal");
+const $members = d.querySelectorAll(".member");
+const $member1Circle = d.querySelector(".member1-circle");
+const $member2Circle = d.querySelector(".member2-circle");
+const $member3Circle = d.querySelector(".member3-circle");
 
 function disable_scroll() {
   d.ontouchmove = function (e) {
@@ -40,6 +44,38 @@ d.addEventListener("DOMContentLoaded", () => {
     })
   );
 
+  //--------------------------------------------------------------THE TEAM-----------------------------------------------------------------
+  $members.forEach((member) => {
+    member.addEventListener("mouseenter", () => {
+      function contieneClase(nombreClase) {
+        if (member.classList.contains(nombreClase)) {
+          return true;
+        }
+      }
+      if (contieneClase("member1")) {
+        $member1Circle.style.setProperty("background-color", "#fab91c");
+      } else if (contieneClase("member2")) {
+        $member2Circle.style.setProperty("background-color", "#85bb25");
+      } else if (contieneClase("member3")) {
+        $member3Circle.style.setProperty("background-color", "#0082ca");
+      }
+    });
+    member.addEventListener("mouseleave", () => {
+      function contieneClase(nombreClase) {
+        if (member.classList.contains(nombreClase)) {
+          return true;
+        }
+      }
+      if (contieneClase("member1")) {
+        $member1Circle.style.setProperty("background-color", "");
+      } else if (contieneClase("member2")) {
+        $member2Circle.style.setProperty("background-color", "");
+      } else if (contieneClase("member3")) {
+        $member3Circle.style.setProperty("background-color", "");
+      }
+    });
+  });
+
   $teamMembers.forEach((link) =>
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -68,7 +104,7 @@ d.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// --------------------- SWIPER FOUNDERS ----------------------
+// -------------------------------------------------------------- SWIPER FOUNDERS --------------------------------------------------------------
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,

@@ -210,7 +210,6 @@ header {
 }
 
 .intro p:nth-child(2) {
-  margin-top: 15px;
   color: var(--rojo);
   position: relative;
 }
@@ -442,25 +441,73 @@ header {
 }
 
 /*------------------------ THE TEAM ------------------------*/
-/*------------------------- SWIPER -------------------------*/
+/*------------------------- MEMBERS ------------------------*/
+
+.the-team {
+  text-align: center;
+}
 
 .fotos-team {
   text-align: center;
+  display: inline-block;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .fotos-team img {
   width: 100%;
-  max-width: 300px;
-  margin: 20px 0;
+  width: 300px;
 }
 
 .fotos-team span {
   color: var(--negroTexto);
   font-family: "GOTHAM-LIGHT";
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 26px;
   display: block;
 }
+
+.member1, .member2, .member3 {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.member1-circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid var(--amarillo);
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  z-index: -10;
+  margin: 0 auto;
+}
+
+.member2-circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid var(--verde);
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  z-index: -10;
+  margin: 0 auto;
+}
+
+.member3-circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid var(--celeste);
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  z-index: -10;
+  margin: 0 auto;
+}
+
 
 /*---------------------- IMAGEN MAR ----------------------*/
 

@@ -1,5 +1,7 @@
 ------------------------------------------------------------- To Do ------------------------------------------------------------------------------------
 
+-Completar el circulo de founder del color de fondo (en hover)
+
 -Section titles (ABOUT US) en mal posicionamiento. La versión vertical tal vez no funciona bien en mobile?
 O tal vez deban los section titles estar más arriba del propio texto.
 
