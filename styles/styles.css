@@ -408,6 +408,7 @@ header {
   font-family: "GOTHAM-LIGHT";
   line-height: 17px;
   margin-bottom: 22px;
+  padding-right: 10px;
 }
 
 .team-modal-child a{
@@ -430,22 +431,9 @@ header {
   color: white;
 }
 
-.text-slide {
-  min-height: 550px;
-}
-
-.textSwiper {
-  margin: 10px auto 0px;
-}
-
-.modal-paginator {
-  position: static !important;
-  margin-top: 20px;
-}
-
 .logo-modal-linkedin {
   display: block;
-  margin-bottom: 15px;
+  margin: 10px 0;
 }
 
 .links-bio a:nth-child(2) {
