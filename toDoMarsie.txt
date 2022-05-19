@@ -1,18 +1,19 @@
 ------------------------------------------------------------- To Do EASY---------------------------------------------------------------------------------
 
--BIOS, idem 6. El scroll creo en mobile quedaría mejor vertical que horizontal (ver ejemplo Atlassian). Faltan los saltos y espaciado entre párrafos. 
-
--BIOS, en pantalla chica no se ven los links a Linkedin ni a otros founders.
-
 -Sección OUR VALUES se pierde el texto en el círculo tan grande
 
--Agregar el texto de Privacy Policy
+-
+
+
 
 ------------------------------------------------------------- To Do HARD---------------------------------------------------------------------------------
 
 -Section titles (ABOUT US) en mal posicionamiento. La versión vertical tal vez no funciona bien en mobile? (OJO IPHONE)
 O tal vez deban los section titles estar más arriba del propio texto.
 
+-Redireccionamientos en mobile (celulares chicos, no redirige bien)
+
+-Darle una transicion al modal en mobile (que aparezca de la izquierda "lentamente")
 
 
 
@@ -32,3 +33,11 @@ tal vez solucionando 2 esto ya quede mejor?
 
 -Sección founders creo que no está resuelto de forma óptima para Mobile. Yo pondría los 3 estáticos en una misma screen o uno abajo del otro.
 (uso de modelo el ejemplo que les compartí antes de Atlassian)
+
+-BIOS, en pantalla chica no se ven los links a Linkedin ni a otros founders.
+
+-BIOS, idem 6. El scroll creo en mobile quedaría mejor vertical que horizontal (ver ejemplo Atlassian). Faltan los saltos y espaciado entre párrafos.
+
+-Agregar el texto de Privacy Policy
+
+-Agregar Google analytics.
