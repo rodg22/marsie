@@ -1,13 +1,13 @@
 @font-face {
   font-family: "GOTHAM-BOLD";
-  src: url("../../assets/fonts/GOTHAM-BOLD.ttf");
+  src: url("../../assets/fonts/GOTHAM-BOLD.TTF");
   font-weight: none;
   font-style: normal;
 }
 
 @font-face {
   font-family: "GOTHAM-BOLDITALIC";
-  src: url("../../assets/fonts/GOTHAM-BOLDITALIC.ttf");
+  src: url("../../assets/fonts/GOTHAM-BOLDITALIC.TTF");
   font-weight: none;
   font-style: normal;
 }
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "GOTHAM-LIGHTITALIC";
-  src: url("../../assets/fonts/GOTHAM-LIGHTITALIC.ttf");
+  src: url("../../assets/fonts/GOTHAM-LIGHTITALIC.TTF");
   font-weight: none;
   font-style: normal;
 }
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: "GOTHAM-MEDIUMITALIC";
-  src: url("../../assets/fonts/GOTHAM-MEDIUMITALIC.ttf");
+  src: url("../../assets/fonts/GOTHAM-MEDIUMITALIC.TTF");
   font-weight: none;
   font-style: normal;
 }
