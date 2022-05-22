@@ -52,7 +52,6 @@ header {
   height: 60px;
   z-index: 30;
   background-color: rgba(250, 250, 250, 0.95);
-  overflow-x: hidden;
 }
 
 #logo-mobile {
@@ -513,7 +512,7 @@ header {
 }
 
 .our-values {
-  margin: 240px auto 200px;
+  margin: 200px auto 220px;
   position: relative;
   display: flex;
   align-items: flex-start;
