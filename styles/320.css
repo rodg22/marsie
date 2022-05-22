@@ -54,6 +54,10 @@ header {
   background-color: rgba(250, 250, 250, 0.95);
 }
 
+.header-child {
+  width: 100%;
+}
+
 #logo-mobile {
   position: absolute;
   top: -5px;
