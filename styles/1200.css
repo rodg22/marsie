@@ -1,0 +1,798 @@
+/*----------------------- COLORS -----------------------*/
+
+:root {
+  --amarillo: #fab91c;
+  --azulOscuro: #17375c;
+  --celeste: #0082ca;
+  --rojo: #e42522;
+  --verde: #85bb25;
+  --negroTexto: #2b2b2b;
+  --negro: #424242;
+}
+
+/*---------------------- GENERALES ----------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+.values-item[id] {
+  scroll-margin-top: 150px;
+}
+
+/*----------------------- HEADER ------------------------*/
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  z-index: 30;
+  background-color: rgba(250, 250, 250, 0.7);
+  backdrop-filter: blur(3px);
+}
+
+.header-child {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#logo-mobile {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  padding-top: 10px;
+  margin: 10px 0 0 10px;
+  width: 150px;
+  height: 150px;
+}
+
+#logo-mobile img{
+  width: 100%;
+}
+
+/*========= MENU =========*/
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.menu ul li{
+  font-family: "GOTHAM-LIGHT";
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 16px;
+}
+
+.menu ul li a{
+  margin: 0 0 0 30px;
+  padding: 25px 10px 15px;
+  color: var(--negroTexto);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu ul li:nth-child(1) a:hover{
+  color: var(--celeste);
+}
+
+.menu ul li:nth-child(2) a:hover{
+  color: var(--verde);
+}
+
+.menu ul li:nth-child(3) a:hover{
+  color: var(--rojo);
+}
+
+.menu ul li:nth-child(4) a:hover{
+  color: var(--amarillo);
+}
+
+/*------------------------ INTRO ------------------------*/
+
+.intro {
+  margin: auto;
+  width: 90%;
+  max-width: 700px;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "GOTHAM-MEDIUM";
+  font-size: 40px;
+  line-height: 45px;
+  position: relative;
+  transform: translateY(40%)
+}
+
+.intro::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--rojo);
+  position: absolute;
+  top: -200px;
+  left: -200px;
+}
+
+.intro::after {
+  content: "";
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: var(--celeste);
+  position: absolute;
+  top: -270px;
+  left: 120px;
+}
+
+.intro p:nth-child(1) {
+  color: var(--negroTexto);
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.intro p:nth-child(1)::before {
+  content: "";
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: var(--azulOscuro);
+  position: absolute;
+  bottom: -400px;
+  left: -500px;
+}
+
+.intro p:nth-child(1)::after {
+  content: "";
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: var(--amarillo);
+  position: absolute;
+  bottom: -100px;
+  right: -300px;
+}
+
+.intro p:nth-child(2) {
+  color: var(--rojo);
+  position: relative;
+}
+
+.intro p:nth-child(2)::after {
+  content: "";
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: var(--verde);
+  position: absolute;
+  bottom: -250px;
+  right: -30px;
+}
+
+/*----------------------- ABOUT US -----------------------*/
+
+.about-us {
+  display: flex;
+  padding: 5px 20px 5px 5px;
+  max-width: 1200px;
+  margin: 70px auto 120px;
+}
+
+.about-us h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: right;
+  color: var(--celeste);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 20px;
+}
+
+.about-us-content {
+  display: grid;
+  grid-template-columns: 300px 50px 750px;
+  grid-template-rows: repeat(7, minmax(50px, auto));
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 5px;
+}
+
+.about-us-content h3 {
+  text-align: right;
+  color: var(--azulOscuro);
+  font-family: "GOTHAM-MEDIUM";
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-us-content p {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 17px;
+  line-height: 23px;
+  text-align: left;
+}
+
+.circling-div-p {
+  border-left: 1px solid var(--azulOscuro);
+  margin: 20px 0 30px;
+  padding-left: 25px;
+  position: relative;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.circling-div-p p{
+  margin-bottom: 10px;
+}
+
+.p-circle::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: -6.1px;
+}
+.p-amarillo::before {
+  background-color: var(--amarillo);
+}
+.p-verde::before {
+  background-color: var(--verde);
+}
+.p-celeste::before {
+  background-color: var(--celeste);
+}
+
+.about-us-content p:nth-of-type(1){
+  grid-column: 3/4;
+}
+
+.about-us-content p:nth-of-type(2){
+  grid-column: 3/4;
+}
+
+.about-us-content p:nth-of-type(3){
+  grid-column: 3/4;
+}
+
+.about-us-content h3:nth-of-type(2){
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.about-us-content h3:nth-of-type(3){
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+.about-us-content p:nth-of-type(4){
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+
+.about-us-content p:nth-of-type(5){
+  grid-column: 3/4;
+  grid-row: 7/8;
+}
+
+/*---------------------- IMAGEN SIERRA ----------------------*/
+
+.imagen-sierra {
+  width: 100%;
+  height: 50vh;
+  background: url(../assets/images/sierra-desktop.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*------------------------ THE TEAM ------------------------*/
+
+.the-team {
+  margin: 120px auto 100px;
+  position: relative;
+  max-width: 1200px;
+}
+
+.div-team {
+  margin: 40px 0;
+  display: flex;
+  padding: 5px;
+}
+
+.div-team h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: right;
+  color: var(--verde);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 20px;
+}
+
+.div-team-content {
+  padding-left: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.div-team-content h3 {
+  text-align: center;
+  color: var(--azulOscuro);
+  font-family: "GOTHAM-MEDIUM";
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.div-team-content p {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.team-member {
+  text-decoration: none;
+}
+
+/*------------------------ THE TEAM ------------------------*/
+/*------------------------- MODAL --------------------------*/
+
+.arrow-out-modal {
+  margin: 0 0 10px 10px;
+  padding-left: 5px;
+}
+
+.arrow-out-modal:hover {
+  cursor: pointer;
+}
+
+#team-modal-container {
+  text-align: left;
+}
+
+.team-modal-child {
+  display: none;
+  padding: 30px;
+  height: 90vh;
+  width: 99%;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  z-index: 35;
+  border-radius: 30px 0px 0px 30px;
+  overflow-y: scroll;
+}
+
+.visible-member {
+  display: block;
+}
+
+.team-modal-child > span{
+  color: white;
+  margin-bottom: 25px;
+}
+
+.team-modal-child h4{
+  font-size: 30px;
+  font-family: "GOTHAM-MEDIUM";
+  margin-bottom: 10px;
+}
+
+.team-modal-child p{
+  font-size: 16px;
+  font-family: "GOTHAM-LIGHT";
+  line-height: 17px;
+  margin-bottom: 22px;
+  padding-right: 10px;
+}
+
+.team-modal-child a{
+  font-size: 16px;
+  font-family: "GOTHAM-LIGHT";
+  line-height: 17px;
+  color: white;
+}
+
+.modal-amarillo {
+  background-color: var(--amarillo);
+}
+
+.modal-verde {
+  background-color: var(--verde);
+}
+
+.modal-celeste {
+  background-color: var(--celeste);
+  color: white;
+}
+
+.logo-modal-linkedin {
+  display: block;
+  margin: 10px 0;
+}
+
+.links-bio a:nth-child(2) {
+  margin-left: 30px;
+}
+
+/*------------------------ THE TEAM ------------------------*/
+/*------------------------- MEMBERS ------------------------*/
+
+.the-team {
+  text-align: center;
+}
+
+.fotos-team {
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.fotos-team img {
+  width: 100%;
+  width: 300px;
+}
+
+.fotos-team span {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 22px;
+  line-height: 26px;
+  display: block;
+}
+
+.member1, .member2, .member3 {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  z-index: -10;
+  margin: 0 auto;
+}
+
+.member1-circle {
+  border: 1px solid var(--amarillo);
+}
+
+.member2-circle {
+  border: 1px solid var(--verde);
+}
+
+.member3-circle {
+  border: 1px solid var(--celeste);
+}
+
+
+/*---------------------- IMAGEN MAR ----------------------*/
+
+.imagen-mar {
+  width: 100%;
+  height: 50vh;
+  background: url(../assets/images/mar-desktop.png) left center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*----------------------- OUR VALUES ----------------------*/
+
+#our-values {
+  display: flex;
+  justify-content: center;
+}
+
+.our-values {
+  margin: 320px auto 660px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 1000px;
+}
+
+.our-values::before {
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background-color: var(--rojo);
+  position: absolute;
+  top: -220px;
+  left: -520px;
+  z-index: -1;
+}
+
+.our-values h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: #ffffff;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 20px;
+  padding: 10px 10px 35px 10px;
+  display: inline-block;
+}
+
+.our-values-red {
+  text-align: left;
+  position: relative;
+}
+
+.our-values-red p {
+  font-family: "GOTHAM-LIGHT";
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  padding: 20px;
+  display: inline-block;
+  width: 450px;
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  text-align: right;
+}
+
+.values {
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+  min-width: 542px;
+}
+
+.values-container {
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.tiny-red-circle::before {
+  content: "";
+  background-color: var(--rojo);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  top: 5px;
+}
+
+.values-container h3{
+  font-family: "GOTHAM-MEDIUM";
+  font-size: 30px;
+  margin-bottom: 0px;
+  letter-spacing: 5px;
+  text-align: left;
+  color: var(--rojo);
+}
+
+.values-item{
+  position: absolute;
+  min-width: 420px;
+}
+
+#value-1 {
+  top: -380px;
+  left: 430px;
+}
+
+#value-2 {
+  top: -180px;
+  left: 510px;
+}
+
+#value-3 {
+  top: 20px;
+  left: 530px;
+}
+
+#value-4 {
+  top: 220px;
+  left: 510px;
+}
+
+#value-5 {
+  top: 420px;
+  left: 430px;
+}
+
+.values-item p:nth-of-type(2){
+  font-family: "GOTHAM-LIGHT";
+  font-size: 17px;
+  line-height: 23px;
+  text-align: left;
+  color: var(--negroTexto);
+}
+
+.italic{
+  font-family: "GOTHAM-LIGHTITALIC";
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+#id-red-paginator {
+  display: none;
+}
+
+/*---------------------- IMAGEN MARTE ----------------------*/
+
+.imagen-marte {
+  width: 100%;
+  height: 50vh;
+  background: url(../assets/images/marte-desktop.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*----------------------- CONTACT US ----------------------*/
+
+.contact-us {
+  margin: 100px auto;
+  max-width: 1200px;
+}
+
+.div-contact {
+  margin: 40px 0;
+  display: flex;
+  padding: 5px;
+}
+
+.contact-us h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: right;
+  color: var(--amarillo);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 20px;
+}
+
+.contact-us-content {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.contact-us-content h3 {
+  text-align: center;
+  color: var(--azulOscuro);
+  font-family: "GOTHAM-MEDIUM";
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-us-content p {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 17px;
+  line-height: 23px;
+  margin: 20px 5px 0px;
+}
+
+.contact-us-content a {
+  color: var(--negroTexto);
+  font-family: "GOTHAM-LIGHT";
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+#linkedIn {
+  width: 25px;
+}
+
+/*----------------------- FOOTER ----------------------*/
+
+footer {
+  background-color: var(--negro);
+  padding: 20px 0 20px;
+}
+
+.footer-child {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container-footer {
+  width: 98%;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.flex-container-footer img{
+  width: 50%;
+  max-width: 150px;
+}
+
+.div-lista-footer{
+  display: inline-block;
+  min-width: 500px;
+  text-align: center;
+}
+
+.div-lista-footer ul{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.div-lista-footer ul li{
+  list-style: none;
+  padding: 0px 15px;
+  margin-top: 15px;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 2px;
+}
+
+.div-lista-footer ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+footer p {
+  color: #ffffff;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+  line-height: 16px;
+  margin: 15px 5px 0px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.privacy-policy {
+  color: #ffffff;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 15px;
+  line-height: 16px;
+  margin: 10px auto 0px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.div-lista-footer ul li a:hover ,.privacy-policy:hover {
+  color: #a8a1a1;
+}

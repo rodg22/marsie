@@ -23,33 +23,38 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/hamburguer.css" />
+    <!-- ----------------------------- Styles and the breakpoints ------------------------------ -->
+    <link rel="stylesheet" href="styles/320.css" media="(max-width: 914.9px)">
+    <link rel="stylesheet" href="styles/hamburguer.css" media="(max-width: 914.9px)"/>
+    <link rel="stylesheet" href="styles/915.css" media="(min-width: 915px) and (max-width: 1199.9px)">
+    <link rel="stylesheet" href="styles/1200.css" media="(min-width: 1200px)">
     <title>MARSIE</title>
   </head>
   <body>
     <header>
-      <!-- HAMBURGER ICON -->
-      <div id="hamburger">
-        <div class="hamburger"><div class="hamburger-inner"></div></div>
+      <div class="header-child">
+        <!-- HAMBURGER ICON -->
+        <div id="hamburger">
+          <div class="hamburger"><div class="hamburger-inner"></div></div>
+        </div>
+        <!-- CIRCLE NAVBAR -->
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="blured-bg" id="menu-blur"></div>
+        <!-- ------------- -->
+        <nav class="menu">
+          <ul>
+              <li><a href="#about-us">ABOUT US</a></li>
+              <li><a href="#the-team">THE TEAM</a></li>
+              <li><a href="#value-1">OUR VALUES</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div id="logo-mobile">
+          <a href="index.html">
+            <img src="assets/logos/logoMarsie.svg" alt="logo de Marsie" />
+          </a>
+        </div>
       </div>
-      <!-- CIRCLE NAVBAR -->
-      <div class="menu-bg" id="menu-bg"></div>
-      <div class="blured-bg" id="menu-blur"></div>
-      <!-- ------------- -->
-      <nav class="menu">
-        <ul>
-            <li><a href="#about-us">ABOUT US</a></li>
-            <li><a href="#the-team">THE TEAM</a></li>
-            <li><a href="#our-values">OUR VALUES</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </nav>
-    <div id="logo-mobile">
-      <a href="index.html">
-        <img src="assets/logos/logoMarsie.svg" alt="logo de Marsie" />
-      </a>
-    </div>
     </header>
     <main>
       <section class="intro">
@@ -160,7 +165,7 @@
                 I’m also the proud father of Ines, a young and charming little girl who constantly pushes the limits of reality and teaches me how to become a better parent and man. Music is and has always been present at all times of my life: walking by the sea very early in the morning, cooking, doing chores, working… you name it. I play some instruments for fun as well, and love to sing along with my daughter. I also take great pleasure in tasting coffee and wine; learning about them and enjoying the sensorial experience has turned into a passion of mine.
               </p>
             </div>
-            <a href="https://www.linkedin.com/company/marsie-llc/"><img class="logo-modal-linkedin" src="assets/logos/logo-linkedin-blanco.png" alt="Logo de LinkedIn"></a>
+            <a href="https://www.linkedin.com/company/marsie-llc/" target="_blank"><img class="logo-modal-linkedin" src="assets/logos/logo-linkedin-blanco.png" alt="Logo de LinkedIn"></a>
             <div class="links-bio">
               <a href="">Bio <span>Marco</span></a>
               <a href="">Bio <span>Juan Pablo</span></a>
@@ -193,7 +198,7 @@
                 Also in 2019, we got together again with Agus and JP, this time in part virtually, as JP now lives in Tandil and Agus and I dwell in Mar del Plata, to create Marsie, and combine the new hiring model with our contractors well-being. Marsie is designed as a fair, transparent, and agile working framework updated for engineers. 
               </p>
             </div>
-            <a href="https://www.linkedin.com/company/marsie-llc/"><img class="logo-modal-linkedin" src="assets/logos/logo-linkedin-blanco.png" alt="Logo de LinkedIn"></a>
+            <a href="https://www.linkedin.com/company/marsie-llc/" target="_blank"><img class="logo-modal-linkedin" src="assets/logos/logo-linkedin-blanco.png" alt="Logo de LinkedIn"></a>
             <div class="links-bio">
               <a href="">Bio <span>Agus</span></a>
               <a href="">Bio <span>Juan Pablo</span></a>
@@ -229,7 +234,7 @@
                 As a professional, I feel the call of making our world a place where we can live longer and happier. As a human being, I feel responsible for setting this example every single day of my life.
               </p>
             </div>
-            <a href="https://www.linkedin.com/company/marsie-llc/"><img class="logo-modal-linkedin" src="assets/logos/logo-linkedin-blanco.png" alt="Logo de LinkedIn"></a>
+            <a href="https://www.linkedin.com/company/marsie-llc/" target="_blank"><img class="logo-modal-linkedin" src="assets/logos/logo-linkedin-blanco.png" alt="Logo de LinkedIn"></a>
             <div class="links-bio">
               <a href="">Bio <span>Agus</span></a>
               <a href="">Bio <span>Marco</span></a>
@@ -238,57 +243,59 @@
         </div>
       </section>
       <div class="imagen-mar"></div>
-      <section id="our-values" class="our-values">
-        <div class="our-values-red">
-          <h2>OUR VALUES</h2>
-          <p>
-            Our Values shape our culture from the beginning, and act as our
-            guiding light, ensuring we speak and act consistently across our
-            business at all times.
-          </p>
-        </div>
-        <!-- Swiper -->
-        <div class="values swiper valuesSwiper">
-          <div class="values-container swiper-wrapper">
-            <div class="values-item swiper-slide">
-              <h3>EXPERTISE</h3>
-              <p>Know your work</p>
-              <p>
-                We have years of experience in solving software-world issues. We
-                achieve mastery in our work, embrace challenges and deliver results.
-              </p>
-            </div>
-            <div class="values-item swiper-slide">
-              <h3>INTEGRITY</h3>
-              <p>Do the right thing</p>
-              <p>
-                We are truthful and ethical, we follow through on commitments, and
-                learn from mistakes.
-              </p>
-            </div>
-            <div class="values-item swiper-slide">
-              <h3>KINDNESS</h3>
-              <p>Support the people</p>
-              <p>
-                We are genuinely interested in making a positive impact on our team,
-                our clients, and the communities in which we live and work.
-              </p>
-            </div>
-            <div class="values-item swiper-slide">
-              <h3>FAMILY</h3>
-              <p>Personal relationships matter</p>
-              <p>
-                We are committed and work hard while also giving priority to our
-                families, friends, and health.
-              </p>
-            </div>
-            <div class="values-item swiper-slide">
-              <h3>SIMPLICITY</h3>
-              <p>Strive for clarity and consistency</p>
-              <p>We make swift, informed decisions focusing on what’s essential.</p>
-            </div>
+      <section id="our-values">
+        <div class="our-values">
+          <div class="our-values-red">
+            <h2>OUR VALUES</h2>
+            <p>
+              Our Values shape our culture from the beginning, and act as our
+              guiding light, ensuring we speak and act consistently across our
+              business at all times.
+            </p>
           </div>
-          <div class="red-paginator swiper-pagination"></div>
+          <!-- Swiper -->
+          <div id="red-swiper" class="values swiper valuesSwiper">
+            <div class="values-container swiper-wrapper">
+              <div id="value-1" class="values-item tiny-red-circle swiper-slide">
+                <h3>EXPERTISE</h3>
+                <p class="italic">Know your work</p>
+                <p>
+                  We have years of experience in solving software-world issues. We
+                  achieve mastery in our work, embrace challenges and deliver results.
+                </p>
+              </div>
+              <div id="value-2" class="values-item tiny-red-circle swiper-slide">
+                <h3>INTEGRITY</h3>
+                <p class="italic">Do the right thing</p>
+                <p>
+                  We are truthful and ethical, we follow through on commitments, and
+                  learn from mistakes.
+                </p>
+              </div>
+              <div id="value-3" class="values-item tiny-red-circle swiper-slide">
+                <h3>KINDNESS</h3>
+                <p class="italic">Support the people</p>
+                <p>
+                  We are genuinely interested in making a positive impact on our team,
+                  our clients, and the communities in which we live and work.
+                </p>
+              </div>
+              <div id="value-4" class="values-item tiny-red-circle swiper-slide">
+                <h3>FAMILY</h3>
+                <p class="italic">Personal relationships matter</p>
+                <p>
+                  We are committed and work hard while also giving priority to our
+                  families, friends, and health.
+                </p>
+              </div>
+              <div id="value-5" class="values-item tiny-red-circle swiper-slide">
+                <h3>SIMPLICITY</h3>
+                <p class="italic">Strive for clarity and consistency</p>
+                <p>We make swift, informed decisions focusing on what’s essential.</p>
+              </div>
+            </div>
+            <div id="id-red-paginator" class="red-paginator swiper-pagination"></div>
+          </div>
         </div>
       </section>
       <div class="imagen-marte"></div>
@@ -300,22 +307,24 @@
               <p>We appreciate your interest, so please drop us a line.</p>
               <a href="mailto:contact@marsie.io">contact@marsie.io</a>
               <p>To check our current jobs listing, please visit our LinkedIn profile and submit your resume.</p>
-              <a href="https://www.linkedin.com/company/marsie-llc/"><img id="linkedIn" src="assets/logos/logo-linkedin.png" alt="Logo de LinkedIn"></a>
+              <a href="https://www.linkedin.com/company/marsie-llc/" target="_blank"><img id="linkedIn" src="assets/logos/logo-linkedin.png" alt="Logo de LinkedIn"></a>
             </div>
       </section>
       <footer>
-        <div class="flex-container-footer">
-          <img src="assets/logos/logo-footer.svg" alt="logo de Marsie del footer">
-          <div class="div-lista-footer">
-            <ul>
-              <li><a href="#about-us">ABOUT US</a></li>
-              <li><a href="#the-team">THE TEAM</a></li>
-              <li><a href="#our-values">OUR VALUES</a></li>
-            </ul>
+        <div class="footer-child">
+          <div class="flex-container-footer">
+            <img src="assets/logos/logo-footer.svg" alt="logo de Marsie del footer">
+            <div class="div-lista-footer">
+              <ul>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#the-team">THE TEAM</a></li>
+                <li><a href="#value-1">OUR VALUES</a></li>
+              </ul>
+            </div>
           </div>
+          <a class="privacy-policy" href="privacy-policy.html">Privacy policy</a>
+          <p>2022 Marsie - All rights reserved &#169</p>
         </div>
-        <a class="privacy-policy" href="privacy-policy.html">Privacy policy</a>
-        <p>2022 Marsie - All rights reserved &#169</p>
       </footer>
     </main>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

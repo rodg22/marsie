@@ -39,6 +39,10 @@ section[id] {
   scroll-margin-top: 70px;
 }
 
+.values-item[id] {
+  scroll-margin-top: 200px;
+}
+
 /*----------------------- HEADER ------------------------*/
 
 header {
@@ -503,7 +507,7 @@ header {
 /*----------------------- OUR VALUES ----------------------*/
 
 .our-values {
-  margin: 210px auto 270px;
+  margin: 240px auto 200px;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -512,17 +516,22 @@ header {
 
 .our-values::before {
   content: "";
-  width: 420px;
-  height: 420px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -110px;
-  left: calc(50% - 250px);
+  top: -210px;
+  left: calc(40% - 200px);
   z-index: -1;
 }
 
-.our-values h2 {
+.our-values-red {
+  margin: 0 auto;
+  justify-self: flex-end;
+}
+
+.our-values-red h2 {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   color: #ffffff;
@@ -538,9 +547,9 @@ header {
   line-height: 22px;
   color: #ffffff;
   padding: 20px;
-  display: inline-block;
-  max-width: 65vw;
   display: none;
+  max-width: 400px;
+  text-align: right;
 }
 
 .values {
@@ -657,7 +666,7 @@ footer {
 
 .flex-container-footer img{
   width: 50%;
-  max-width: 230px;
+  max-width: 150px;
 }
 
 .div-lista-footer ul{

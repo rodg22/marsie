@@ -137,20 +137,41 @@ var swiper = new Swiper(".textSwiper", {
 
 // ---------------------- SWIPER VALUES -----------------------
 
-var swiper = new Swiper(".valuesSwiper", {
-  spaceBetween: 0,
-  centeredSlides: true,
-  slidesPerView: 1,
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+setTimeout(() => {
+  var swiper = new Swiper(".valuesSwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}, 0);
+
+// ---------------------------------------------------------------- OUR VALUES ----------------------------------------------------------------
+
+let minWidth = 915;
+let mediaQuery = window.matchMedia(`(min-width: ${minWidth}px)`);
+
+const $idCaja = d.getElementById("red-swiper");
+
+const responsiveContent = (mediaquery) => {
+  if (mediaquery.matches) {
+    $idCaja.classList.remove("swiper");
+    $idCaja.classList.remove("valuesSwiper");
+  } else {
+    $idCaja.classList.add("swiper");
+    $idCaja.classList.add("valuesSwiper");
+  }
+};
+mediaQuery.addListener(responsiveContent);
+responsiveContent(mediaQuery);
