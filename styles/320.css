@@ -520,7 +520,6 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  overflow-x: hidden;
 }
 
 .our-values::before {
@@ -533,6 +532,7 @@ header {
   top: -210px;
   left: calc(40% - 200px);
   z-index: -1;
+  overflow-x: hidden;
 }
 
 .our-values-red {
