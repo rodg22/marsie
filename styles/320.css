@@ -56,6 +56,8 @@ header {
 
 .header-child {
   width: 100%;
+  height: 60px;
+  z-index: 30;
 }
 
 #logo-mobile {
