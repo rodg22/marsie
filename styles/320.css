@@ -234,6 +234,7 @@ header {
 .about-us {
   display: flex;
   padding: 5px 20px 5px 5px;
+  margin-bottom: 50px;
 }
 
 .about-us h2 {
@@ -243,6 +244,8 @@ header {
   color: var(--celeste);
   font-family: "GOTHAM-LIGHT";
   font-size: 15px;
+  display: inline-block;
+  padding-left: 15px;
 }
 
 .about-us-content {
@@ -250,7 +253,7 @@ header {
 }
 
 .about-us-content h3 {
-  text-align: center;
+  text-align: left;
   color: var(--azulOscuro);
   font-family: "GOTHAM-MEDIUM";
   margin-bottom: 20px;
@@ -261,19 +264,16 @@ header {
   margin: 40px 0 20px;
 }
 
-.about-us-content > p {
-  color: var(--negroTexto);
-  font-family: "GOTHAM-LIGHT";
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-}
-
 .about-us-content p {
   color: var(--negroTexto);
   font-family: "GOTHAM-LIGHT";
   font-size: 16px;
   line-height: 22px;
+  text-align: left;
+}
+
+.distanciar {
+  margin-top: 15px;
 }
 
 .circling-div-p {
@@ -304,11 +304,33 @@ header {
 /*---------------------- IMAGEN SIERRA ----------------------*/
 
 .imagen-sierra {
-  width: 100%;
   height: 60vh;
-  background: url(../assets/images/sierra-mobile.png) center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(../assets/images/sierra-mobile.png) no-repeat;
+  background-size: 500% auto;
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  .imagen-sierra {
+    background-size: 450% auto;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  .imagen-sierra {
+    background-size: 350% auto;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .imagen-sierra {
+    background-size: 250% auto;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 915px) {
+  .imagen-sierra {
+    background-size: 200% auto;
+  }
 }
 
 /*------------------------ THE TEAM ------------------------*/
@@ -471,12 +493,12 @@ header {
 }
 
 .circle {
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   position: absolute;
-  top: 42px;
-  right: 10px;
+  top: 80px;
+  right: 0px;
   z-index: -10;
   margin: 0 auto;
 }
@@ -497,11 +519,51 @@ header {
 /*---------------------- IMAGEN MAR ----------------------*/
 
 .imagen-mar {
-  width: 100%;
   height: 60vh;
-  background: url(../assets/images/mar-mobile.png) left center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(../assets/images/mar-mobile.png) no-repeat;
+  background-size: 200% auto;
+}
+
+@media screen and (min-width: 321px) and (max-width: 399px) {
+  .imagen-mar {
+    height: 60vh;
+    background-size: 160% auto;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .imagen-mar {
+    height: 60vh;
+    background-size: 150% auto;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  .imagen-mar {
+    height: 65vh;
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  .imagen-mar {
+    height: 70vh;
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .imagen-mar {
+    height: 75vh;
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 915px) {
+  .imagen-mar {
+    height: 90vh;
+    background-size: 100% auto;
+  }
 }
 
 /*----------------------- OUR VALUES ----------------------*/
@@ -594,12 +656,35 @@ header {
 /*---------------------- IMAGEN MARTE ----------------------*/
 
 .imagen-marte {
-  width: 100%;
   height: 60vh;
   background: url(../assets/images/marte-mobile.png) center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: 400% auto;
 }
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  .imagen-marte {
+    background-size: 375% auto;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  .imagen-marte {
+    background-size: 350% auto;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .imagen-marte {
+    background-size: 250% auto;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 915px) {
+  .imagen-marte {
+    background-size: 200% auto;
+  }
+}
+
 
 /*----------------------- CONTACT US ----------------------*/
 
@@ -669,8 +754,13 @@ footer {
   justify-content: space-between;
 }
 
-.flex-container-footer img{
-  width: 50%;
+.logo-footer {
+  margin-top: 20px;
+  height: 40px;
+}
+
+.logo-footer img{
+  width: 100%;
   max-width: 150px;
 }
 

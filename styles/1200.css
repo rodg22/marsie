@@ -475,12 +475,12 @@ header {
 }
 
 .circle {
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   position: absolute;
-  top: 42px;
-  right: 10px;
+  top: 80px;
+  right: 0px;
   z-index: -10;
   margin: 0 auto;
 }
@@ -735,8 +735,8 @@ footer {
   align-content: center;
 }
 
-.flex-container-footer img{
-  width: 50%;
+.logo-footer img{
+  width: 100%;
   max-width: 150px;
 }
 
