@@ -104,37 +104,6 @@ d.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// -------------------------------------------------------------- SWIPER FOUNDERS --------------------------------------------------------------
-
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 0,
-  centeredSlides: true,
-  slidesPerView: 1,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-// ------------------- SWIPER FOUNDERS TEXT --------------------
-
-var swiper = new Swiper(".textSwiper", {
-  spaceBetween: 0,
-  centeredSlides: true,
-  slidesPerView: 1,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
 // ---------------------- SWIPER VALUES -----------------------
 
 setTimeout(() => {

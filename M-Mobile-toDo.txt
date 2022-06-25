@@ -3,16 +3,12 @@
 -Sección OUR VALUES que quede en el mismo lugar a medida que crece la resolucion de pantalla
 
 ------------------------------------------------------------- To Do HARD---------------------------------------------------------------------------------
+-About us --> que aparezcan los textos de a poco.
 
--Redireccionamientos en mobile (celulares chicos, no redirige bien)
+-Darle una transicion al modal en desktop (que haga un fadeIn)
 
--Darle una transicion al modal en mobile (que aparezca de la derecha "lentamente" hacia la izquierda)
+-Mobile iOS --> Cuando toco el Menu hamburguesa, se debe blurear el fondo
 
--Mobile iOS --> Background images en iOS no se ven con el efecto adecuado, se ven blureadas, corregir esto
-
--Mobile iOS --> Cuando toco el Menu hamburguesa, no se blurea el fondo
-
--Mobile iOS --> Section titles (ABOUT US) en mal posicionamiento. La versión vertical tal vez no funciona bien en mobile? (OJO IPHONE)
-O tal vez deban los section titles estar más arriba del propio texto.
+-Acomodar circulos de la intro con medidas porcentuales (position relative el 100vh podria ser una opcion y posicionarlos de ahi).
 
 -------------------------------------------------------------- Done -------------------------------------------------------------------------------------
