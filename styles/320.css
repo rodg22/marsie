@@ -305,32 +305,8 @@ header {
 
 .imagen-sierra {
   height: 60vh;
-  background: url(../assets/images/sierra-mobile.png) no-repeat;
-  background-size: 500% auto;
-}
-
-@media screen and (min-width: 450px) and (max-width: 550px) {
-  .imagen-sierra {
-    background-size: 450% auto;
-  }
-}
-
-@media screen and (min-width: 551px) and (max-width: 650px) {
-  .imagen-sierra {
-    background-size: 350% auto;
-  }
-}
-
-@media screen and (min-width: 651px) and (max-width: 850px) {
-  .imagen-sierra {
-    background-size: 250% auto;
-  }
-}
-
-@media screen and (min-width: 851px) and (max-width: 915px) {
-  .imagen-sierra {
-    background-size: 200% auto;
-  }
+  background: url(../assets/images/sierra-mobile.png) center center no-repeat;
+  background-size: cover;
 }
 
 /*------------------------ THE TEAM ------------------------*/
@@ -520,50 +496,8 @@ header {
 
 .imagen-mar {
   height: 60vh;
-  background: url(../assets/images/mar-mobile.png) no-repeat;
-  background-size: 200% auto;
-}
-
-@media screen and (min-width: 321px) and (max-width: 399px) {
-  .imagen-mar {
-    height: 60vh;
-    background-size: 160% auto;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 500px) {
-  .imagen-mar {
-    height: 60vh;
-    background-size: 150% auto;
-  }
-}
-
-@media screen and (min-width: 501px) and (max-width: 600px) {
-  .imagen-mar {
-    height: 65vh;
-    background-size: 100% auto;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 700px) {
-  .imagen-mar {
-    height: 70vh;
-    background-size: 100% auto;
-  }
-}
-
-@media screen and (min-width: 701px) and (max-width: 800px) {
-  .imagen-mar {
-    height: 75vh;
-    background-size: 100% auto;
-  }
-}
-
-@media screen and (min-width: 701px) and (max-width: 915px) {
-  .imagen-mar {
-    height: 90vh;
-    background-size: 100% auto;
-  }
+  background: url(../assets/images/mar-mobile.png) center center no-repeat;
+  background-size: cover;
 }
 
 /*----------------------- OUR VALUES ----------------------*/
@@ -658,31 +592,7 @@ header {
 .imagen-marte {
   height: 60vh;
   background: url(../assets/images/marte-mobile.png) center center no-repeat;
-  background-size: 400% auto;
-}
-
-@media screen and (min-width: 450px) and (max-width: 550px) {
-  .imagen-marte {
-    background-size: 375% auto;
-  }
-}
-
-@media screen and (min-width: 551px) and (max-width: 650px) {
-  .imagen-marte {
-    background-size: 350% auto;
-  }
-}
-
-@media screen and (min-width: 651px) and (max-width: 850px) {
-  .imagen-marte {
-    background-size: 250% auto;
-  }
-}
-
-@media screen and (min-width: 851px) and (max-width: 915px) {
-  .imagen-marte {
-    background-size: 200% auto;
-  }
+  background-size: cover;
 }
 
 
