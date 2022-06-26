@@ -76,9 +76,9 @@ header {
     text-align: right;
     position: absolute;
     right: 30px;
-    bottom: -225px;
+    bottom: calc(-100vh + 60px);
     width: 190px;
-    height: 225px;
+    height: calc(100vh - 60px);
     transition: transform 0.3s;
     z-index: 15;
 }
