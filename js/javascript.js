@@ -8,6 +8,7 @@ const $linkMenu = d.querySelectorAll(".menu ul li a");
 const $circleMenu = d.getElementById("menu-bg");
 const $blurMenu = d.getElementById("menu-blur");
 const $visible1 = d.querySelectorAll(".visible-1");
+const $visibleLast = d.querySelectorAll(".visible-last");
 const $visible2 = d.querySelectorAll(".visible-2");
 const $visible3 = d.querySelectorAll(".visible-3");
 const $visible4 = d.querySelectorAll(".visible-4");
@@ -69,28 +70,35 @@ d.addEventListener("DOMContentLoaded", () => {
         element.classList.add("now-visible");
       });
     }
-    if (scrollY > 500) {
-      $visible2[0].classList.add("circling-div-p-border");
+    if (scrollY > 600) {
       $visible2.forEach((element) => {
         element.classList.add("now-visible");
       });
-    }
-    if (scrollY > 550) {
-      $visible3.forEach((element) => {
-        element.classList.add("now-visible");
-      });
-    }
-    if (scrollY > 600) {
-      $visible4.forEach((element) => {
+      $visibleLast.forEach((element) => {
         element.classList.add("now-visible");
       });
     }
     if (scrollY > 700) {
+      $visible3.forEach((element) => {
+        element.classList.add("now-visible");
+      });
+    }
+    if (scrollY > 780) {
+      $visible4.forEach((element) => {
+        element.classList.add("now-visible");
+      });
+    }
+    if (scrollY > 850) {
+      $visibleLast.forEach((element) => {
+        element.classList.add("circling-div-p-border");
+      });
+    }
+    if (scrollY > 900) {
       $visible5.forEach((element) => {
         element.classList.add("now-visible");
       });
     }
-    if (scrollY > 800) {
+    if (scrollY > 950) {
       $visible6.forEach((element) => {
         element.classList.add("now-visible");
       });
