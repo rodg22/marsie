@@ -24,6 +24,7 @@ html {
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 .stop-scrolling {
@@ -75,9 +76,9 @@ header {
     text-align: right;
     position: absolute;
     right: 30px;
-    bottom: calc(-100vh + 60px);
-    width: 100%;
-    height: calc(100vh - 60px);
+    bottom: calc(-49vh + 60px);
+    width: 190px;
+    height: 225px;
     transition: transform 0.3s;
     z-index: 15;
 }
@@ -122,13 +123,39 @@ header {
 	transition: 0.3s ease;
 }
 
+/* .body-blur {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.body-blur::before {
+  content: '';
+  background-color: inherit;
+  background-repeat: inherit;
+  background-attachment: inherit;
+  background-size: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  z-index: 14;
+} */
+
 .blured-bg {
-	top: 0;
-	right: 0px;
-	position: absolute;
-	z-index: 10;
-	width: 0;
-	height: 0;
+  top: 0;
+  right: 0px;
+  position: absolute;
+  z-index: 10;
+  width: 0;
+  height: 0;
   backdrop-filter: blur(2px) contrast(60%);
   -webkit-backdrop-filter: blur(2px) contrast(60%);
   -moz-backdrop-filter: blur(2px) contrast(60%);
@@ -136,15 +163,15 @@ header {
   -ms-backdrop-filter: blur(2px) contrast(60%);
 }
 
+.change-to-blured{
+  width: 100vw;
+  height: 100vh;
+}
+
 .change-bg{
 	width: 700px;
 	height: 700px;
 	transform: translate(50%,-50%);
-}
-
-.change-to-blured{
-	width: 100vw;
-	height: 100vh;
 }
 
 .change{

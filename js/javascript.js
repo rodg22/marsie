@@ -43,6 +43,7 @@ d.addEventListener("DOMContentLoaded", () => {
     $menuClass.classList.toggle("change");
     $circleMenu.classList.toggle("change-bg");
     $blurMenu.classList.toggle("change-to-blured");
+    $body.classList.toggle("body-blur");
   });
 
   $linkMenu.forEach((link) =>
