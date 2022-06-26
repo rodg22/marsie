@@ -70,7 +70,7 @@ d.addEventListener("DOMContentLoaded", () => {
         element.classList.add("now-visible");
       });
     }
-    if (scrollY > 600) {
+    if (scrollY > 500) {
       $visible2.forEach((element) => {
         element.classList.add("now-visible");
       });
@@ -78,27 +78,27 @@ d.addEventListener("DOMContentLoaded", () => {
         element.classList.add("now-visible");
       });
     }
-    if (scrollY > 700) {
+    if (scrollY > 600) {
       $visible3.forEach((element) => {
         element.classList.add("now-visible");
       });
     }
-    if (scrollY > 780) {
+    if (scrollY > 650) {
       $visible4.forEach((element) => {
         element.classList.add("now-visible");
       });
     }
-    if (scrollY > 850) {
+    if (scrollY > 700) {
       $visibleLast.forEach((element) => {
         element.classList.add("circling-div-p-border");
       });
     }
-    if (scrollY > 900) {
+    if (scrollY > 800) {
       $visible5.forEach((element) => {
         element.classList.add("now-visible");
       });
     }
-    if (scrollY > 950) {
+    if (scrollY > 850) {
       $visible6.forEach((element) => {
         element.classList.add("now-visible");
       });
