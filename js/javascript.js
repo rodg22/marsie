@@ -62,6 +62,7 @@ d.addEventListener("DOMContentLoaded", () => {
       });
     }
     if (scrollY > 500) {
+      $visible2[0].classList.add("circling-div-p");
       $visible2.forEach((element) => {
         element.classList.add("now-visible");
         element.classList.add("circling-div-p-border");

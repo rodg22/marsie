@@ -250,8 +250,6 @@ header {
   opacity: 1;
 }
 
-
-
 .about-us h2 {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -295,13 +293,13 @@ header {
 }
 
 .circling-div-p {
-  margin-top: 20px;
   position: relative;
+  border-left: 1px solid var(--azulOscuro);
 }
 
 .circling-div-p-border {
-  border-left: 1px solid var(--azulOscuro);
-  padding-left: 25px;
+  padding-left: 12.5px;
+  margin-top: 20px;
 }
 
 .p-circle {
