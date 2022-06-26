@@ -3,10 +3,13 @@
 
 
 ------------------------------------------------------------- To Do HARD---------------------------------------------------------------------------------
+-About us --> que aparezcan los textos de a poco.
 
--Transicion de aparicion de elemento a medida que scrolleamos.
+-Darle una transicion al modal en desktop (que haga un fadeIn)
 
--Que los titles me sigan a lo largo de la seccion.
+-Que los titulos de las secciones me sigan a medida que scrolleamos
+
+-Acomodar circulos de la intro con medidas porcentuales (position relative el 100vh podria ser una opcion y posicionarlos de ahi).
 
 -------------------------------------------------------------- Done -------------------------------------------------------------------------------------
 

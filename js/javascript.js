@@ -14,6 +14,7 @@ const $members = d.querySelectorAll(".member");
 const $member1Circle = d.querySelector(".member1-circle");
 const $member2Circle = d.querySelector(".member2-circle");
 const $member3Circle = d.querySelector(".member3-circle");
+const $changeMember = d.querySelectorAll(".go-to-bios");
 
 function disable_scroll() {
   d.ontouchmove = function (e) {
@@ -80,6 +81,23 @@ d.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       $modalMember.forEach((member) => {
+        const miembroSlider = link.querySelector("span").innerText;
+        const miembroModal = member.querySelector("h4").innerText;
+        if (miembroModal === miembroSlider) {
+          member.classList.add("visible-member");
+          $blurMenu.classList.add("change-to-blured");
+          $body.classList.add("stop-scrolling");
+          disable_scroll();
+        }
+      });
+    })
+  );
+
+  $changeMember.forEach((link) =>
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      $modalMember.forEach((member) => {
+        member.classList.remove("visible-member");
         const miembroSlider = link.querySelector("span").innerText;
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
