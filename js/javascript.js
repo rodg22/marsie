@@ -7,6 +7,12 @@ const $menuClass = d.querySelector(".menu");
 const $linkMenu = d.querySelectorAll(".menu ul li a");
 const $circleMenu = d.getElementById("menu-bg");
 const $blurMenu = d.getElementById("menu-blur");
+const $visible1 = d.querySelectorAll(".visible-1");
+const $visible2 = d.querySelectorAll(".visible-2");
+const $visible3 = d.querySelectorAll(".visible-3");
+const $visible4 = d.querySelectorAll(".visible-4");
+const $visible5 = d.querySelectorAll(".visible-5");
+const $visible6 = d.querySelectorAll(".visible-6");
 const $teamMembers = d.querySelectorAll(".team-member");
 const $modalMember = d.querySelectorAll(".team-modal-child");
 const $modalArrows = d.querySelectorAll(".arrow-out-modal");
@@ -28,6 +34,8 @@ function enable_scroll() {
   };
 }
 
+//--------------------------------------------------------------HAMBURGER-----------------------------------------------------------------
+
 d.addEventListener("DOMContentLoaded", () => {
   $hamburger.addEventListener("click", () => {
     $hamburgerClass.classList.toggle("open");
@@ -44,6 +52,44 @@ d.addEventListener("DOMContentLoaded", () => {
       $blurMenu.classList.toggle("change-to-blured");
     })
   );
+
+  //--------------------------------------------------------------ABOUT US-----------------------------------------------------------------
+
+  d.addEventListener("scroll", () => {
+    if (scrollY > 300) {
+      $visible1.forEach((element) => {
+        element.classList.add("now-visible");
+      });
+    }
+    if (scrollY > 500) {
+      $visible2.forEach((element) => {
+        element.classList.add("now-visible");
+        element.classList.add("circling-div-p-border");
+      });
+    }
+    if (scrollY > 550) {
+      $visible3.forEach((element) => {
+        element.classList.add("now-visible");
+        element.classList.add("circling-div-p-border");
+      });
+    }
+    if (scrollY > 600) {
+      $visible4.forEach((element) => {
+        element.classList.add("now-visible");
+        element.classList.add("circling-div-p-border");
+      });
+    }
+    if (scrollY > 700) {
+      $visible5.forEach((element) => {
+        element.classList.add("now-visible");
+      });
+    }
+    if (scrollY > 800) {
+      $visible6.forEach((element) => {
+        element.classList.add("now-visible");
+      });
+    }
+  });
 
   //--------------------------------------------------------------THE TEAM-----------------------------------------------------------------
   $members.forEach((member) => {
