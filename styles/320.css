@@ -76,7 +76,7 @@ header {
     text-align: right;
     position: absolute;
     right: 30px;
-    bottom: calc(-49vh + 60px);
+    bottom: -225px;
     width: 190px;
     height: 225px;
     transition: transform 0.3s;
@@ -156,15 +156,15 @@ header {
   z-index: 10;
   width: 0;
   height: 0;
-  filter: blur(15px);
-  -webkit-filter: blur(15px);
-  -moz-filter: blur(15px);
-  -ms-filter: blur(15px);
-  backdrop-filter: blur(2px) contrast(60%);
-  -webkit-backdrop-filter: blur(2px) contrast(60%);
-  -moz-backdrop-filter: blur(2px) contrast(60%);
-  -o-backdrop-filter: blur(2px) contrast(60%);
-  -ms-backdrop-filter: blur(2px) contrast(60%);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -ms-filter: blur(3px);
+  backdrop-filter: blur(3px) contrast(60%);
+  -webkit-backdrop-filter: blur(3px) contrast(60%);
+  -moz-backdrop-filter: blur(3px) contrast(60%);
+  -o-backdrop-filter: blur(3px) contrast(60%);
+  -ms-backdrop-filter: blur(3px) contrast(60%);
 }
 
 .change-to-blured{
