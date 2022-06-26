@@ -53,6 +53,14 @@ d.addEventListener("DOMContentLoaded", () => {
     })
   );
 
+  // const $hamburger = d.getElementById("hamburger");
+  // const $main = d.querySelector("main");
+  // const $hamburgerClass = d.querySelector(".hamburger");
+  // const $menuClass = d.querySelector(".menu");
+  // const $linkMenu = d.querySelectorAll(".menu ul li a");
+  // const $circleMenu = d.getElementById("menu-bg");
+  // const $blurMenu = d.getElementById("menu-blur");
+
   //--------------------------------------------------------------ABOUT US-----------------------------------------------------------------
 
   d.addEventListener("scroll", () => {
@@ -62,22 +70,19 @@ d.addEventListener("DOMContentLoaded", () => {
       });
     }
     if (scrollY > 500) {
-      $visible2[0].classList.add("circling-div-p");
+      $visible2[0].classList.add("circling-div-p-border");
       $visible2.forEach((element) => {
         element.classList.add("now-visible");
-        element.classList.add("circling-div-p-border");
       });
     }
     if (scrollY > 550) {
       $visible3.forEach((element) => {
         element.classList.add("now-visible");
-        element.classList.add("circling-div-p-border");
       });
     }
     if (scrollY > 600) {
       $visible4.forEach((element) => {
         element.classList.add("now-visible");
-        element.classList.add("circling-div-p-border");
       });
     }
     if (scrollY > 700) {

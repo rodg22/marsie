@@ -294,12 +294,12 @@ header {
 
 .circling-div-p {
   position: relative;
-  border-left: 1px solid var(--azulOscuro);
+  padding-left: 25px;
+  margin-top: 20px;
 }
 
 .circling-div-p-border {
-  padding-left: 12.5px;
-  margin-top: 20px;
+  border-left: 1px solid var(--azulOscuro);
 }
 
 .p-circle {
