@@ -7,7 +7,7 @@
 
 -Dejar un pequeño aire debajo del modal (que no llegue hasta el texto cortado).
 
--Mobile iOS --> Cuando toco el Menu hamburguesa, se debe blurear el fondo
+-Mobile iOS --> Cuando toco el Menu hamburguesa, se debe blurear el fondo o quedar con una opacidad para que no se lea.
 
 -Acomodar circulos de la intro con medidas porcentuales (position relative el 100vh podria ser una opcion y posicionarlos de ahi).
 

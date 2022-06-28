@@ -130,11 +130,8 @@ header {
   bottom: 0;
   left: 0;
   overflow: hidden;
+  opacity: 0.8;
   z-index: 10;
-  background-color: black;
-  background-attachment: fixed;
-  background-size: cover;
-  opacity: 0.4;
 }
 
 .blured-bg::before {
@@ -144,15 +141,13 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("");
-  background-color: black;
+  background-image: url(../assets/images/blanco.png);
   background-attachment: fixed;
-  background-size: cover;
   filter: blur(3px);
   -webkit-filter: blur(3px);
   -moz-filter: blur(3px);
   -ms-filter: blur(3px);
-  z-index: 10;
+  z-index: -1;
 }
 
 .change-to-blured{
