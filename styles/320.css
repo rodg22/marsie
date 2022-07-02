@@ -58,7 +58,7 @@ header {
 #logo-mobile {
   position: absolute;
   top: -5px;
-  left: 10px;
+  left: 0px;
   padding-top: 10px;
   margin: 10px 0 0 10px;
   width: 150px;
@@ -130,7 +130,7 @@ header {
   bottom: 0;
   left: 0;
   overflow: hidden;
-  opacity: 0.8;
+  opacity: 0.90;
   z-index: 10;
 }
 

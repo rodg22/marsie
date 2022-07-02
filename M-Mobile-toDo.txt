@@ -3,9 +3,11 @@
 -Sección OUR VALUES que quede en el mismo lugar a medida que crece la resolucion de pantalla
 
 -Armar como 5 media queries en la parte de our values red para que se centre
-el circulito rojo del ojete.
+el circulito rojo.
 
 ------------------------------------------------------------- To Do HARD---------------------------------------------------------------------------------
+-Que los founders vayan apareciendo de a uno(fadeIn con scroll)
+
 -Que los titulos de las secciones me sigan a medida que scrolleamos
 
 -Dejar un pequeño aire debajo del modal (que no llegue hasta el texto cortado).

@@ -56,14 +56,6 @@ d.addEventListener("DOMContentLoaded", () => {
     })
   );
 
-  // const $hamburger = d.getElementById("hamburger");
-  // const $main = d.querySelector("main");
-  // const $hamburgerClass = d.querySelector(".hamburger");
-  // const $menuClass = d.querySelector(".menu");
-  // const $linkMenu = d.querySelectorAll(".menu ul li a");
-  // const $circleMenu = d.getElementById("menu-bg");
-  // const $blurMenu = d.getElementById("menu-blur");
-
   //--------------------------------------------------------------ABOUT US-----------------------------------------------------------------
 
   d.addEventListener("scroll", () => {

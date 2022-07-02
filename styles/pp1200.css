@@ -1,0 +1,272 @@
+/*----------------------- COLORS -----------------------*/
+
+:root {
+  --amarillo: #fab91c;
+  --azulOscuro: #17375c;
+  --celeste: #0082ca;
+  --rojo: #e42522;
+  --verde: #85bb25;
+  --negroTexto: #2b2b2b;
+  --negro: #424242;
+}
+
+/*---------------------- GENERALES ----------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: "GOTHAM-LIGHT";
+}
+
+/*----------------------- HEADER ------------------------*/
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  z-index: 30;
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.header-child {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#logo-mobile {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  padding-top: 10px;
+  margin: 10px 0 0 10px;
+  width: 150px;
+}
+
+#logo-mobile img{
+  width: 100%;
+}
+
+/*----------------------- MAIN ------------------------*/
+
+main {
+  padding: 0 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.div-backtohome {
+  margin-top: 80px;
+}
+
+.div-backtohome a {
+  font-size: 15px;
+  color: var(--verde);
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "GOTHAM-LIGHT";
+  font-weight: 1000;
+  color: var(--azulOscuro);
+  text-transform: uppercase;
+  text-align: right;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0px 0 20px;
+  color: var(--celeste); 
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+}
+ul li {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.enter {
+  margin-top: 15px;
+}
+
+.bold-celeste {
+  color: var(--celeste);
+}
+
+.indent {
+  text-indent: 20px;
+}
+
+
+/*------------------------ GRID -----------------------*/
+
+section {
+  display: grid;
+}
+
+/*------------- SECTION PRIVACY POLICY-----------------*/
+
+section:nth-of-type(1) {
+  margin: 40px 0 70px;
+  grid-template-columns: 300px 70px 650px;
+  grid-template-rows: repeat(2, minmax(50px, auto));
+}
+
+section:nth-of-type(1) p:nth-of-type(1) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+section:nth-of-type(1) p:nth-of-type(2) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/*-- SECTION COLLECTING AND USING YOUR PERSONAL DATA --*/
+
+section:nth-of-type(2) {
+  margin: 0px 0 70px;
+  grid-template-columns: 300px 70px 650px;
+  grid-template-rows: repeat(2, minmax(50px, auto));
+}
+
+section:nth-of-type(2) article {
+  grid-column: 3/4;
+}
+
+/*-------- SECTION USE OF YOUR PERSONAL DATA ---------*/
+
+section:nth-of-type(3) {
+  margin: 0px 0 70px;
+  grid-template-columns: 300px 70px 650px;
+  grid-template-rows: repeat(2, minmax(50px, auto));
+}
+
+section:nth-of-type(3) p, section:nth-of-type(3) ul {
+  grid-column: 3/4;
+}
+
+.negative-margin{
+  margin-top: -20px;
+}
+
+/*----- SECTION RETENTION OF YOUR PERSONAL DATA ------*/
+
+section:nth-of-type(4) {
+  margin: 0px 0 70px;
+  grid-template-columns: 300px 70px 650px;
+  grid-template-rows: repeat(1, minmax(50px, auto));
+}
+
+section:nth-of-type(4) p {
+  grid-column: 3/4;
+}
+
+/*---- SECTION DISCLOSURE OF YOUR PERSONAL DATA -----*/
+
+section:nth-of-type(5) {
+  margin: 0px 0 70px;
+  grid-template-columns: 300px 70px 650px;
+  grid-template-rows: repeat(2, minmax(50px, auto));
+}
+
+section:nth-of-type(5) p, section:nth-of-type(5) ul {
+  grid-column: 3/4;
+}
+
+.negative-margin2{
+  margin-top: 0px;
+}
+
+/*----- SECTION CHANGES TO THIS PRIVACY POLICY ------*/
+
+section:nth-of-type(6) {
+  margin: 0px 0 70px;
+  grid-template-columns: 300px 70px 650px;
+  grid-template-rows: repeat(2, minmax(50px, auto));
+}
+
+section:nth-of-type(6) p {
+  grid-column: 3/4;
+}
+
+.negative-margin3{
+  margin-top: -4px;
+}
+
+/*--------------- SECTION CONTACT US ---------------*/
+
+section:nth-of-type(7) {
+  margin: 0px 0 50px;
+  grid-template-columns: 300px 70px 650px;
+  grid-template-rows: repeat(2, minmax(20px, auto));
+}
+
+section:nth-of-type(7) p {
+  grid-column: 3/4;
+}
+
+/*----------------------------------------------------*/
+
+.italic {
+  font-style: italic;
+  margin: 20px 0 0px;
+}
+
+#bottom-backtohome {
+  font-size: 15px;
+  color: var(--verde);
+}
+
+/*----------------------- FOOTER ----------------------*/
+
+footer {
+  margin-top: 50px;
+  background-color: var(--negro)
+}
+
+.footer-child {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container-footer {
+  margin: 0 auto;
+  padding: 10px 10px 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo-footer {
+  margin-top: 20px;
+  height: 40px;
+}
+
+.logo-footer img{
+  width: 100%;
+  max-width: 150px;
+}
+
+footer p {
+  color: #ffffff;
+  font-family: "GOTHAM-LIGHT";
+  font-size: 14px;
+  line-height: 15px;
+  margin: 15px 5px 0px;
+  padding-bottom: 20px;
+  text-align: center;
+}
