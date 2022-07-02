@@ -22,6 +22,8 @@ const $member1Circle = d.querySelector(".member1-circle");
 const $member2Circle = d.querySelector(".member2-circle");
 const $member3Circle = d.querySelector(".member3-circle");
 const $changeMember = d.querySelectorAll(".go-to-bios");
+const $mobileTexts = d.querySelectorAll(".mobile-values-text");
+const $desktopTexts = d.querySelectorAll(".desktop-values-text");
 
 function disable_scroll() {
   d.ontouchmove = function (e) {
@@ -222,3 +224,23 @@ const responsiveContent = (mediaquery) => {
 };
 mediaQuery.addListener(responsiveContent);
 responsiveContent(mediaQuery);
+
+const responsiveValueText = (mediaquery) => {
+  if (mediaquery.matches) {
+    $mobileTexts.forEach((text) => {
+      text.style.setProperty("display", "none");
+    });
+    $desktopTexts.forEach((text) => {
+      text.style.removeProperty("display", "none");
+    });
+  } else {
+    $mobileTexts.forEach((text) => {
+      text.style.removeProperty("display", "none");
+    });
+    $desktopTexts.forEach((text) => {
+      text.style.setProperty("display", "none");
+    });
+  }
+};
+
+responsiveValueText(mediaQuery);

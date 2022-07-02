@@ -568,32 +568,15 @@ header {
 /*----------------------- OUR VALUES ----------------------*/
 
 #our-values {
-  display: flex;
-  justify-content: center;
+  margin: 80px auto 190px;
 }
 
 .our-values {
-  margin: 100px auto 220px;
+  margin: 0 auto;
   position: relative;
-  /* display: flex; */
-  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
-}
-
-.our-values::before {
-  content: "";
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background-color: var(--rojo);
-  position: absolute;
-  top: -50px;
-  left: -290px;
-  z-index: -1;
-}
-
-.our-values-red {
-  margin-right: 20%;
 }
 
 .our-values-red h2 {
@@ -604,17 +587,11 @@ header {
   font-size: 16px;
   padding: 10px 10px 35px 10px;
   display: inline-block;
+  margin-right: auto;
 }
 
 .our-values-red p {
-  font-family: "GOTHAM-LIGHT";
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  padding: 20px;
   display: none;
-  max-width: 400px;
-  text-align: right;
 }
 
 .values {
@@ -622,7 +599,6 @@ header {
   color: white;
   max-width: 270px;
   text-align: center;
-  display: inline-block;
 }
 
 .values-container {
@@ -631,9 +607,20 @@ header {
 
 .values-container h3{
   font-family: "GOTHAM-MEDIUM";
-  font-size: 15px;
-  margin-bottom: 20px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 7px;
   text-align: left;
+}
+
+.italic {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.values-item {
+  padding: 0 20px;
+  margin-bottom: 10px;
 }
 
 .values-item p{
@@ -644,12 +631,43 @@ header {
 }
 
 .red-paginator {
-  margin: 40px auto 10px;
+  margin: 30px auto 10px;
   display: inline-block;
 }
 
 .swiper-pagination-bullet-active {
   background-color: white !important;
+}
+
+.red-circle {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.the-red-circle {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.the-red-circle::before {
+  content: "";
+  align-self: center;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: var(--rojo);
+  position: absolute;
+  top: -470px;
+  left: -290px;
+  z-index: -1;
 }
 
 /*---------------------- IMAGEN MARTE ----------------------*/
