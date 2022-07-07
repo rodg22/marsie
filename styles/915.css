@@ -549,15 +549,15 @@ header {
 
 .our-values-red p {
   font-family: "GOTHAM-LIGHT";
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 27px;
   color: #ffffff;
   padding: 20px;
   display: inline-block;
   width: 400px;
   position: absolute;
-  top: 180px;
-  left: 70px;
+  top: 130px;
+  left: 30px;
   text-align: right;
 }
 
@@ -600,27 +600,27 @@ header {
 
 #value-1 {
   top: -280px;
-  left: 440px;
+  left: 480px;
 }
 
 #value-2 {
   top: -130px;
-  left: 530px;
+  left: 570px;
 }
 
 #value-3 {
   top: 20px;
-  left: 550px;
+  left: 590px;
 }
 
 #value-4 {
   top: 170px;
-  left: 530px;
+  left: 570px;
 }
 
 #value-5 {
   top: 320px;
-  left: 470px;
+  left: 510px;
 }
 
 .values-item p:nth-of-type(2){

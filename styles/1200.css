@@ -556,8 +556,21 @@ header {
   z-index: -1;
 }
 
+/* .our-values::after {
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background-color: var(--rojo);
+  position: absolute;
+  top: -220px;
+  left: -435px;
+  z-index: -1;
+} */
+
 .our-values h2 {
   writing-mode: vertical-lr;
+  text-align: right;
   transform: rotate(180deg);
   color: #ffffff;
   font-family: "GOTHAM-LIGHT";
@@ -573,15 +586,15 @@ header {
 
 .our-values-red p {
   font-family: "GOTHAM-LIGHT";
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 25px;
+  line-height: 30px;
   color: #ffffff;
   padding: 20px;
   display: inline-block;
   width: 450px;
   position: absolute;
-  top: 180px;
-  left: 22px;
+  top: 160px;
+  left: -40px;
   text-align: right;
 }
 
@@ -619,32 +632,32 @@ header {
 
 .values-item{
   position: absolute;
-  min-width: 420px;
+  max-width: 440px;
 }
 
 #value-1 {
   top: -380px;
-  left: 430px;
+  left: 440px;
 }
 
 #value-2 {
   top: -180px;
-  left: 510px;
+  left: 525px;
 }
 
 #value-3 {
-  top: 20px;
-  left: 530px;
+  top: 0px;
+  left: 585px;
 }
 
 #value-4 {
-  top: 220px;
-  left: 510px;
+  top: 200px;
+  left: 560px;
 }
 
 #value-5 {
-  top: 420px;
-  left: 430px;
+  top: 380px;
+  left: 460px;
 }
 
 .values-item p:nth-of-type(2){
