@@ -346,6 +346,8 @@ header {
   width: 50px;
   height: 50px;
   position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .arrow-out-modal img{
@@ -362,28 +364,40 @@ header {
 }
 
 #team-modal-container {
-  text-align: left;
+  text-align: center;
 }
 
 .team-modal-child {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 40px 350px 40px auto;
+  grid-template-rows: 50px 350px repeat(5, minmax(50px, auto));
   transform: translateX(100%);
   padding: 30px;
   height: 90vh;
-  width: 98%;
+  width: 95%;
+  max-width: 1400px;
   position: fixed;
   right: 0;
-  top: 10px;
+  top: 5%;
   z-index: 35;
   border-radius: 30px 0px 0px 30px;
-  overflow-y: scroll;
-  transition-property: all;
-  transition-duration: 0.5s;
+  transition-property: transform opacity;
+  transition-duration: 0.3s;
   transition-delay: 0;
   transition-timing-function: linear;
 }
 
+.team-modal-child > a{
+  grid-column: 2/3;
+  grid-row: 4/5;
+  align-self: flex-start;
+  text-align: center;
+}
+
 .visible-member {
   transform: translateX(0%);
+  backdrop-filter: blur(2px);
 }
 
 .team-modal-child > span{
@@ -391,14 +405,28 @@ header {
   margin-bottom: 25px;
 }
 
-.imagen-agus, .imagen-marco, .imagen-juanpablo {
-  display: none;
+.imagen-modal-desktop img{
+  width: 75%;
 }
 
 .team-modal-child h4{
   font-size: 30px;
   font-family: "GOTHAM-MEDIUM";
   margin-bottom: 10px;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.team-modal-child h4::before{
+  content: "";
+  background: url(../assets/images/founder-agus.png) center center no-repeat;
+  background-size: cover;
+  width: 362px;
+  height: 459px;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .team-modal-child p{
@@ -411,6 +439,16 @@ header {
 
 .sacarEnDesktop {
   display: none;
+}
+
+.texto-modal {
+  grid-column: 4/5;
+  grid-row: 2/7;
+  overflow-y: scroll;
+  text-align: left;
+  padding-right: 35px;
+  min-width: 480px;
+  max-width: 670px;
 }
 
 .team-modal-child a{
@@ -434,14 +472,40 @@ header {
 }
 
 .logo-modal-linkedin {
-  display: block;
+  display: inline-block;
+  margin: 10px 0;
   width: 35px;
   height: 35px;
-  margin: 15px 0 20px;
+  text-align: center;
 }
 
-.links-bio a:nth-child(2) {
-  margin-left: 30px;
+.links-bio {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.links-bio a:nth-child(1) {
+  margin-right: 70px;
+}
+
+/*-------------------- BLUREO DEL FONDO------------------*/
+
+.blured-backdrop {
+  z-index: 34;
+  background-color: rgba(125, 125, 125, 0.5);
+  backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.change-to-blured{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 /*------------------------ THE TEAM ------------------------*/
