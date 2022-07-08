@@ -377,9 +377,11 @@ header {
 
 .arrow-out-modal img{
   display: inline-block;
+  width: 35px;
+  height: 35px;
   position: absolute;
-  top: 15px;
-  left: 25px;
+  top: 5px;
+  left: 15px;
 }
 
 .arrow-out-modal:hover {
@@ -504,6 +506,8 @@ header {
 .logo-modal-linkedin {
   display: inline-block;
   margin: 10px 0;
+  width: 35px;
+  height: 35px;
   text-align: center;
 }
 
@@ -617,7 +621,7 @@ header {
   position: relative;
   display: inline-block;
   text-align: left;
-  width: 1000px;
+  min-width: 1200px;
 }
 
 .our-values::before {
@@ -628,7 +632,7 @@ header {
   background-color: var(--rojo);
   position: absolute;
   top: -220px;
-  left: -520px;
+  left: -420px;
   z-index: -1;
 }
 
@@ -658,7 +662,7 @@ header {
   width: 450px;
   position: absolute;
   top: 160px;
-  left: -40px;
+  left: 40px;
   text-align: right;
 }
 
@@ -701,27 +705,27 @@ header {
 
 #value-1 {
   top: -380px;
-  left: 440px;
+  left: 540px;
 }
 
 #value-2 {
   top: -180px;
-  left: 525px;
+  left: 625px;
 }
 
 #value-3 {
   top: 0px;
-  left: 585px;
+  left: 685px;
 }
 
 #value-4 {
   top: 200px;
-  left: 560px;
+  left: 660px;
 }
 
 #value-5 {
   top: 380px;
-  left: 460px;
+  left: 560px;
 }
 
 .values-item p:nth-of-type(2){
@@ -909,6 +913,7 @@ footer p {
   width: 32px;
   height: 32px;
   background: url(../assets/logos/scrollTop.png) center center no-repeat;
+  background-size: contain;
 }
 
 .scrollTop:hover {

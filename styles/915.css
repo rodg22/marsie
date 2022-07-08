@@ -350,9 +350,11 @@ header {
 
 .arrow-out-modal img{
   display: inline-block;
+  width: 35px;
+  height: 35px;
   position: absolute;
-  top: 15px;
-  left: 25px;
+  top: 5px;
+  left: 15px;
 }
 
 .arrow-out-modal:hover {
@@ -433,7 +435,9 @@ header {
 
 .logo-modal-linkedin {
   display: block;
-  margin: 10px 0;
+  width: 35px;
+  height: 35px;
+  margin: 15px 0 20px;
 }
 
 .links-bio a:nth-child(2) {
@@ -801,6 +805,7 @@ footer p {
   width: 32px;
   height: 32px;
   background: url(../assets/logos/scrollTop.png) center center no-repeat;
+  background-size: contain;
 }
 
 .scrollTop:hover {
