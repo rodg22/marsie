@@ -125,11 +125,6 @@ header {
 }
 
 .blured-bg {
-  position: relative;
-  top: 0;
-  right: 0px;
-  bottom: 0;
-  left: 0;
   overflow: hidden;
   opacity: 0.90;
   z-index: 10;
@@ -145,14 +140,15 @@ header {
   left: 0;
   background-image: url(../assets/images/blanco.png);
   background-attachment: fixed;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -ms-filter: blur(3px);
   z-index: -1;
 }
 
 .change-to-blured{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
 }

@@ -170,7 +170,7 @@ d.addEventListener("DOMContentLoaded", () => {
     arrow.addEventListener("click", () => {
       $modalMember.forEach((member) => {
         member.classList.remove("visible-member");
-        $blurModal.classList.remove("change-to-blured");
+        $blurModal.classList.remove("change-to-blured-modal");
         $body.classList.remove("stop-scrolling");
         enable_scroll();
       });
