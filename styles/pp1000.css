@@ -157,6 +157,10 @@ section:nth-of-type(3) p, section:nth-of-type(3) ul {
   grid-column: 3/4;
 }
 
+.br-only-desktop{
+  display: none;
+}
+
 .negative-margin{
   margin-top: -20px;
 }

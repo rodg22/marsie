@@ -119,6 +119,11 @@ ul li {
   color: var(--verde);
 }
 
+
+.br-only-desktop{
+  display: none;
+}
+
 /*----------------------- FOOTER ----------------------*/
 
 footer {
