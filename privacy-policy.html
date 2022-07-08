@@ -239,5 +239,19 @@
       </div>
     </footer>
     <a href="#" class="scrollTop"></a>
+    <script>
+      const $scrollTop = document.querySelector(".scrollTop")
+      $scrollTop.addEventListener("click", (e) => {
+        e.preventDefault();
+        scroll(0, 0);
+      });
+      document.addEventListener("scroll", () => {
+        if (scrollY > 1000) {
+          $scrollTop.classList.add("aparece-scroll-top");
+        } else {
+          $scrollTop.classList.remove("aparece-scroll-top");
+        }
+      });
+    </script>
   </body>
 </html>
