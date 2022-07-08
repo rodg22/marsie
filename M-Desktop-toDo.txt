@@ -1,15 +1,15 @@
 ------------------------------------------------------------- To Do EASY---------------------------------------------------------------------------------
 
--Texto our-values-red p --> darle los enters segun el mail de Mara.
+-Agregar boton scrollTop
+
+-Blurear fondo modal.
+
 
 ------------------------------------------------------------- To Do HARD---------------------------------------------------------------------------------
 -About us --> que aparezcan los textos de a poco.
-
--Darle una transicion al modal en desktop (que haga un fadeIn)
 
 -Que los titulos de las secciones me sigan a medida que scrolleamos
 
 -Acomodar circulos de la intro con medidas porcentuales (position relative el 100vh podria ser una opcion y posicionarlos de ahi).
 
--------------------------------------------------------------- Done -------------------------------------------------------------------------------------
 

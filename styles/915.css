@@ -390,6 +390,10 @@ header {
   margin-bottom: 25px;
 }
 
+.imagen-agus, .imagen-marco, .imagen-juanpablo {
+  display: none;
+}
+
 .team-modal-child h4{
   font-size: 30px;
   font-family: "GOTHAM-MEDIUM";
