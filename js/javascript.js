@@ -7,6 +7,7 @@ const $menuClass = d.querySelector(".menu");
 const $linkMenu = d.querySelectorAll(".menu ul li a");
 const $circleMenu = d.getElementById("menu-bg");
 const $blurMenu = d.getElementById("menu-blur");
+const $blurModal = d.getElementById("modal-backdrop");
 const $visible1 = d.querySelectorAll(".visible-1");
 const $visibleLast = d.querySelectorAll(".visible-last");
 const $visible2 = d.querySelectorAll(".visible-2");
@@ -139,7 +140,7 @@ d.addEventListener("DOMContentLoaded", () => {
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
           member.classList.add("visible-member");
-          $blurMenu.classList.add("change-to-blured");
+          $blurModal.classList.add("change-to-blured");
           $body.classList.add("stop-scrolling");
           disable_scroll();
         }
@@ -156,7 +157,7 @@ d.addEventListener("DOMContentLoaded", () => {
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
           member.classList.add("visible-member");
-          $blurMenu.classList.add("change-to-blured");
+          $blurModal.classList.add("change-to-blured");
           $body.classList.add("stop-scrolling");
           disable_scroll();
         }
@@ -168,7 +169,7 @@ d.addEventListener("DOMContentLoaded", () => {
     arrow.addEventListener("click", () => {
       $modalMember.forEach((member) => {
         member.classList.remove("visible-member");
-        $blurMenu.classList.remove("change-to-blured");
+        $blurModal.classList.remove("change-to-blured");
         $body.classList.remove("stop-scrolling");
         enable_scroll();
       });
