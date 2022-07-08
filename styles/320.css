@@ -189,7 +189,7 @@ header {
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -12.5%;
+  top: -12vh;
   left: 50px;
 }
 
@@ -200,7 +200,7 @@ header {
   border-radius: 50%;
   background-color: var(--celeste);
   position: absolute;
-  top: -15%;
+  top: -15vh;
   right: 15px;
 }
 
@@ -216,7 +216,7 @@ header {
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -350%;
+  bottom: -40vh;
   left: -115px;
 }
 
@@ -227,7 +227,7 @@ header {
   border-radius: 50%;
   background-color: var(--amarillo);
   position: absolute;
-  bottom: -130%;
+  bottom: -15vh;
   right: -30px;
 }
 
@@ -243,7 +243,7 @@ header {
   border-radius: 50%;
   background-color: var(--verde);
   position: absolute;
-  bottom: -720%;
+  bottom: -22vh;
   right: 65px;
 }
 
