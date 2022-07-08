@@ -25,6 +25,7 @@ const $member3Circle = d.querySelector(".member3-circle");
 const $changeMember = d.querySelectorAll(".go-to-bios");
 const $mobileTexts = d.querySelectorAll(".mobile-values-text");
 const $desktopTexts = d.querySelectorAll(".desktop-values-text");
+const $scrollTop = d.querySelector(".scrollTop");
 
 function disable_scroll() {
   d.ontouchmove = function (e) {
@@ -175,6 +176,27 @@ d.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  // ----------------------- TOP BUTTON -------------------------
+
+  $scrollTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    scroll(0, 0);
+  });
+  d.addEventListener("scroll", () => {
+    if (scrollY > 1000) {
+      $scrollTop.classList.add("aparece-scroll-top");
+    } else {
+      $scrollTop.classList.remove("aparece-scroll-top");
+    }
+  });
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 400) {
+  //     $("#arriba").slideDown(300);
+  //   } else {
+  //     $("#arriba").slideUp(300);
+  //   }
+  // });
 });
 
 // ---------------------- SWIPER VALUES -----------------------

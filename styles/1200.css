@@ -895,7 +895,13 @@ footer p {
   color: #a8a1a1;
 }
 
-#scrollTop {
+/*-------------------- SCROLL TOP --------------------*/
+
+.scrollTop {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity;
+  transition-duration: 1s;
   display: inline-block;
   position: fixed;
   bottom: 20px;
@@ -905,6 +911,11 @@ footer p {
   background: url(../assets/logos/scrollTop.png) center center no-repeat;
 }
 
-#scrollTop:hover {
+.scrollTop:hover {
   cursor: pointer;
+}
+
+.aparece-scroll-top {
+  opacity: 1;
+  visibility: visible;
 }

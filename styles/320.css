@@ -817,3 +817,28 @@ footer p {
 .div-lista-footer ul li a:hover ,.privacy-policy:hover {
   color: #a8a1a1;
 }
+
+/*-------------------- SCROLL TOP --------------------*/
+
+.scrollTop {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity;
+  transition-duration: 1s;
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background: url(../assets/logos/scrollTop.png) center center no-repeat;
+}
+
+.scrollTop:hover {
+  cursor: pointer;
+}
+
+.aparece-scroll-top {
+  opacity: 1;
+  visibility: visible;
+}
