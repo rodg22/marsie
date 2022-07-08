@@ -166,7 +166,7 @@ header {
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -50vh;
+  bottom: -45vh;
   left: -500px;
 }
 

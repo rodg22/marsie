@@ -6,12 +6,8 @@
 el circulito rojo.
 
 ------------------------------------------------------------- To Do HARD---------------------------------------------------------------------------------
--h2 Founder --> En algunos celulares se rompe y queda "Team the" separado en 2 lineas;
-
 -Que los founders vayan apareciendo de a uno(fadeIn con scroll)
 
 -Que los titulos de las secciones me sigan a medida que scrolleamos
-
--Acomodar circulos de la intro con medidas porcentuales (position relative el 100vh podria ser una opcion y posicionarlos de ahi) o acomodarlo con medidas de vh.
 
 -------------------------------------------------------------- Done -------------------------------------------------------------------------------------

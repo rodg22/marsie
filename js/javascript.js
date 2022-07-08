@@ -46,7 +46,6 @@ d.addEventListener("DOMContentLoaded", () => {
     $hamburgerClass.classList.toggle("open");
     $menuClass.classList.toggle("change");
     $circleMenu.classList.toggle("change-bg");
-    $blurMenu.classList.toggle("change-to-blured");
   });
 
   $linkMenu.forEach((link) =>
@@ -54,7 +53,6 @@ d.addEventListener("DOMContentLoaded", () => {
       $hamburgerClass.classList.toggle("open");
       $menuClass.classList.toggle("change");
       $circleMenu.classList.toggle("change-bg");
-      $blurMenu.classList.toggle("change-to-blured");
     })
   );
 
@@ -190,13 +188,6 @@ d.addEventListener("DOMContentLoaded", () => {
       $scrollTop.classList.remove("aparece-scroll-top");
     }
   });
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 400) {
-  //     $("#arriba").slideDown(300);
-  //   } else {
-  //     $("#arriba").slideUp(300);
-  //   }
-  // });
 });
 
 // ---------------------- SWIPER VALUES -----------------------
