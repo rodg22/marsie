@@ -500,7 +500,7 @@ header {
   -webkit-backdrop-filter: blur(5px);
 }
 
-.change-to-blured{
+.change-to-blured-modal{
   position: fixed;
   top: 0;
   right: 0;

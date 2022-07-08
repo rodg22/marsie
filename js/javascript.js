@@ -46,6 +46,7 @@ d.addEventListener("DOMContentLoaded", () => {
     $hamburgerClass.classList.toggle("open");
     $menuClass.classList.toggle("change");
     $circleMenu.classList.toggle("change-bg");
+    $blurMenu.classList.toggle("change-to-blured");
   });
 
   $linkMenu.forEach((link) =>
@@ -53,6 +54,7 @@ d.addEventListener("DOMContentLoaded", () => {
       $hamburgerClass.classList.toggle("open");
       $menuClass.classList.toggle("change");
       $circleMenu.classList.toggle("change-bg");
+      $blurMenu.classList.toggle("change-to-blured");
     })
   );
 
@@ -139,7 +141,7 @@ d.addEventListener("DOMContentLoaded", () => {
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
           member.classList.add("visible-member");
-          $blurModal.classList.add("change-to-blured");
+          $blurModal.classList.add("change-to-blured-modal");
           $body.classList.add("stop-scrolling");
           disable_scroll();
         }
@@ -156,7 +158,7 @@ d.addEventListener("DOMContentLoaded", () => {
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
           member.classList.add("visible-member");
-          $blurModal.classList.add("change-to-blured");
+          $blurModal.classList.add("change-to-blured-modal");
           $body.classList.add("stop-scrolling");
           disable_scroll();
         }
