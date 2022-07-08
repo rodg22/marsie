@@ -189,7 +189,7 @@ header {
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -100px;
+  top: -12.5%;
   left: 50px;
 }
 
@@ -200,7 +200,7 @@ header {
   border-radius: 50%;
   background-color: var(--celeste);
   position: absolute;
-  top: -140px;
+  top: -15%;
   right: 15px;
 }
 
@@ -216,7 +216,7 @@ header {
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -330px;
+  bottom: -350%;
   left: -115px;
 }
 
@@ -227,7 +227,7 @@ header {
   border-radius: 50%;
   background-color: var(--amarillo);
   position: absolute;
-  bottom: -170px;
+  bottom: -130%;
   right: -30px;
 }
 
@@ -243,8 +243,8 @@ header {
   border-radius: 50%;
   background-color: var(--verde);
   position: absolute;
-  bottom: -230px;
-  right: 60px;
+  bottom: -720%;
+  right: 65px;
 }
 
 /*----------------------- ABOUT US -----------------------*/
