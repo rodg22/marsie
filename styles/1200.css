@@ -138,8 +138,8 @@ header {
   border-radius: 50%;
   background-color: var(--rojo);
   position: absolute;
-  top: -200px;
-  left: -200px;
+  top: -20vh;
+  left: 120px;
 }
 
 .intro::after {
@@ -149,8 +149,8 @@ header {
   border-radius: 50%;
   background-color: var(--celeste);
   position: absolute;
-  top: -270px;
-  left: 120px;
+  top: -28vh;
+  left: 550px;
 }
 
 .intro p:nth-child(1) {
@@ -166,7 +166,7 @@ header {
   border-radius: 50%;
   background-color: var(--azulOscuro);
   position: absolute;
-  bottom: -400px;
+  bottom: -50vh;
   left: -500px;
 }
 
@@ -177,7 +177,7 @@ header {
   border-radius: 50%;
   background-color: var(--amarillo);
   position: absolute;
-  bottom: -100px;
+  bottom: -13vh;
   right: -300px;
 }
 
@@ -193,7 +193,7 @@ header {
   border-radius: 50%;
   background-color: var(--verde);
   position: absolute;
-  bottom: -250px;
+  bottom: -24vh;
   right: -30px;
 }
 
