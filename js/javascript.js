@@ -158,9 +158,9 @@ d.addEventListener("DOMContentLoaded", () => {
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
           member.classList.add("visible-member");
-          $blurModal.classList.add("change-to-blured-modal");
-          $body.classList.add("stop-scrolling");
-          disable_scroll();
+          // $blurModal.classList.add("change-to-blured-modal");
+          // $body.classList.add("stop-scrolling");
+          // disable_scroll();
         }
       });
     })
