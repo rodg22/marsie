@@ -453,10 +453,6 @@ header {
   margin-bottom: 50px;
   height: 90vh;
   width: 98%;
-  overflow-y: scroll;
-  position: fixed;
-  right: 0;
-  top: 10px;
   z-index: 35;
   border-radius: 30px 0px 0px 30px;
   transition-property: all;
@@ -467,6 +463,10 @@ header {
 
 .visible-member {
   transform: translateX(0%);
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 10px;
 }
 
 .team-modal-child > span{
@@ -524,7 +524,7 @@ header {
 }
 
 .links-bio {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .links-bio a:nth-child(2) {
