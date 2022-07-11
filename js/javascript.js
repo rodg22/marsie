@@ -143,7 +143,7 @@ d.addEventListener("DOMContentLoaded", () => {
           member.classList.add("visible-member");
           $blurModal.classList.add("change-to-blured-modal");
           $body.classList.add("stop-scrolling");
-          disable_scroll();
+          // disable_scroll();
         }
       });
     })
@@ -163,7 +163,7 @@ d.addEventListener("DOMContentLoaded", () => {
           member.classList.add("visible-member");
           $blurModal.classList.add("change-to-blured-modal");
           $body.classList.add("stop-scrolling");
-          disable_scroll();
+          // disable_scroll();
         }
       });
     })
@@ -175,7 +175,7 @@ d.addEventListener("DOMContentLoaded", () => {
         member.classList.remove("visible-member");
         $blurModal.classList.remove("change-to-blured-modal");
         $body.classList.remove("stop-scrolling");
-        enable_scroll();
+        // enable_scroll();
       });
     });
   });
