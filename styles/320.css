@@ -456,8 +456,6 @@ header {
   position: fixed;
   right: 0;
   top: 10px;
-  -webkit-overflow-scrolling: auto !important;
-  overflow-y: auto !important;
   z-index: 35;
   border-radius: 30px 0px 0px 30px;
   transition-property: all;
@@ -468,6 +466,8 @@ header {
 
 .visible-member {
   transform: translateX(0%);
+  -webkit-overflow-scrolling: auto !important;
+  overflow-y: auto !important;
 }
 
 .team-modal-child > span{
