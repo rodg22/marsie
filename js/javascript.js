@@ -27,17 +27,17 @@ const $mobileTexts = d.querySelectorAll(".mobile-values-text");
 const $desktopTexts = d.querySelectorAll(".desktop-values-text");
 const $scrollTop = d.querySelector(".scrollTop");
 
-function disable_scroll() {
-  d.ontouchmove = function (e) {
-    e.preventDefault();
-  };
-}
+// function disable_scroll() {
+//   d.ontouchmove = function (e) {
+//     e.preventDefault();
+//   };
+// }
 
-function enable_scroll() {
-  d.ontouchmove = function (e) {
-    return true;
-  };
-}
+// function enable_scroll() {
+//   d.ontouchmove = function (e) {
+//     return true;
+//   };
+// }
 
 //--------------------------------------------------------------HAMBURGER-----------------------------------------------------------------
 
