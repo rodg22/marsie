@@ -156,7 +156,7 @@ d.addEventListener("DOMContentLoaded", () => {
         member.classList.remove("visible-member");
         $blurModal.classList.remove("change-to-blured-modal");
         $body.classList.remove("stop-scrolling");
-        enable_scroll();
+        // enable_scroll();
         const miembroSlider = link.querySelector("span").innerText;
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
