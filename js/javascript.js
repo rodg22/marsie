@@ -49,6 +49,13 @@ d.addEventListener("DOMContentLoaded", () => {
     $blurMenu.classList.toggle("change-to-blured");
   });
 
+  $blurMenu.addEventListener("click", () => {
+    $hamburgerClass.classList.toggle("open");
+    $menuClass.classList.toggle("change");
+    $circleMenu.classList.toggle("change-bg");
+    $blurMenu.classList.toggle("change-to-blured");
+  });
+
   $linkMenu.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
