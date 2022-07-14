@@ -243,7 +243,8 @@ section:nth-of-type(7) p {
 
 footer {
   margin-top: 50px;
-  background-color: var(--negro)
+  background-color: var(--negro);
+  padding: 10px 0 20px;
 }
 
 .footer-child {

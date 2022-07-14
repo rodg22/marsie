@@ -781,7 +781,7 @@ header {
 
 footer {
   background-color: var(--negro);
-  padding: 20px 0 20px;
+  padding: 40px 0 50px;
 }
 
 .flex-container-footer {
