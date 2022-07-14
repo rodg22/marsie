@@ -31,6 +31,9 @@ function disable_scroll() {
   d.ontouchmove = function (e) {
     e.preventDefault();
   };
+  $modalMember.ontouchmove = function (e) {
+    return true;
+  };
 }
 
 function enable_scroll() {
@@ -165,7 +168,7 @@ d.addEventListener("DOMContentLoaded", () => {
           member.classList.add("visible-member");
           $blurModal.classList.add("change-to-blured-modal");
           $body.classList.add("stop-scrolling");
-          // disable_scroll();
+          disable_scroll();
         }
       });
     })
@@ -177,13 +180,13 @@ d.addEventListener("DOMContentLoaded", () => {
       $modalMember.forEach((member) => {
         member.classList.remove("visible-member");
         $body.classList.remove("stop-scrolling");
-        // enable_scroll();
+        enable_scroll();
         const miembroSlider = link.querySelector("span").innerText;
         const miembroModal = member.querySelector("h4").innerText;
         if (miembroModal === miembroSlider) {
           member.classList.add("visible-member");
           $body.classList.add("stop-scrolling");
-          // disable_scroll();
+          disable_scroll();
         }
       });
     })
@@ -195,7 +198,7 @@ d.addEventListener("DOMContentLoaded", () => {
         member.classList.remove("visible-member");
         $blurModal.classList.remove("change-to-blured-modal");
         $body.classList.remove("stop-scrolling");
-        // enable_scroll();
+        enable_scroll();
       });
     });
   });
@@ -205,7 +208,7 @@ d.addEventListener("DOMContentLoaded", () => {
       member.classList.remove("visible-member");
       $blurModal.classList.remove("change-to-blured-modal");
       $body.classList.remove("stop-scrolling");
-      // enable_scroll();
+      enable_scroll();
     });
   });
 
