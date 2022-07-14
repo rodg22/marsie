@@ -760,16 +760,15 @@ header {
   font-family: "GOTHAM-LIGHT";
   font-size: 16px;
   line-height: 22px;
-  margin: 20px 5px 0px;
+  margin: 20px 5px 10px;
 }
 
 .contact-us-content a {
-  color: var(--negroTexto);
+  color: var(--celeste);
   font-family: "GOTHAM-LIGHT";
   font-size: 16px;
   font-weight: 1000;
   line-height: 22px;
-  text-decoration: none;
 }
 
 #linkedIn {
