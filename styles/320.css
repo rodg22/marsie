@@ -397,6 +397,10 @@ header {
   line-height: 22px;
 }
 
+.mobile-display-block {
+  display:block;
+}
+
 .team-member {
   text-decoration: none;
 }
