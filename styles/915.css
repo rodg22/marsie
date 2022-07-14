@@ -18,9 +18,9 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   overflow-x: hidden;
@@ -372,7 +372,7 @@ header {
   text-align: center;
   grid-template-columns: 40px 350px 40px auto;
   grid-template-rows: 50px 350px repeat(5, minmax(50px, auto));
-  transform: translateX(100%);
+  transform: translateX(110%);
   padding: 30px;
   height: 90vh;
   width: 95%;

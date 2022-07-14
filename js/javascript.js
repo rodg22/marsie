@@ -49,14 +49,21 @@ d.addEventListener("DOMContentLoaded", () => {
     $blurMenu.classList.toggle("change-to-blured");
   });
 
-  $linkMenu.forEach((link) =>
-    link.addEventListener("click", () => {
+  $linkMenu.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
       $hamburgerClass.classList.toggle("open");
       $menuClass.classList.toggle("change");
       $circleMenu.classList.toggle("change-bg");
       $blurMenu.classList.toggle("change-to-blured");
-    })
-  );
+      const $linkTo = document.getElementById(link.getAttribute("data-link"));
+      if (link.getAttribute("href") === "#contact") {
+        $linkTo.scrollIntoView({ behavior: "smooth", block: "end" });
+      } else {
+        $linkTo.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
 
   //--------------------------------------------------------------ABOUT US-----------------------------------------------------------------
 
