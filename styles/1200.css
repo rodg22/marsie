@@ -380,8 +380,8 @@ header {
   width: 35px;
   height: 35px;
   position: absolute;
-  top: 5px;
-  left: 15px;
+  top: 0;
+  left: 0;
 }
 
 .arrow-out-modal:hover {
