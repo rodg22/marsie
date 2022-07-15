@@ -189,6 +189,15 @@ d.addEventListener("DOMContentLoaded", () => {
           member.classList.add("visible-member");
           $body.classList.add("stop-scrolling");
           disable_scroll();
+          $downArrows.forEach((flecha) => {
+            flecha.classList.remove("desaparecer-flecha");
+          });
+          $textoScrolleableModal.forEach((texto) => {
+            texto.scrollTop = 0;
+          });
+          $modalMember.forEach((texto) => {
+            texto.scrollTop = 0;
+          });
         }
       });
     })
@@ -201,6 +210,15 @@ d.addEventListener("DOMContentLoaded", () => {
         $blurModal.classList.remove("change-to-blured-modal");
         $body.classList.remove("stop-scrolling");
         enable_scroll();
+        $downArrows.forEach((flecha) => {
+          flecha.classList.remove("desaparecer-flecha");
+        });
+        $textoScrolleableModal.forEach((texto) => {
+          texto.scrollTop = 0;
+        });
+        $modalMember.forEach((texto) => {
+          texto.scrollTop = 0;
+        });
       });
     });
   });
@@ -211,6 +229,15 @@ d.addEventListener("DOMContentLoaded", () => {
       $blurModal.classList.remove("change-to-blured-modal");
       $body.classList.remove("stop-scrolling");
       enable_scroll();
+      $downArrows.forEach((flecha) => {
+        flecha.classList.remove("desaparecer-flecha");
+      });
+      $textoScrolleableModal.forEach((texto) => {
+        texto.scrollTop = 0;
+      });
+      $modalMember.forEach((texto) => {
+        texto.scrollTop = 0;
+      });
     });
   });
 
@@ -218,6 +245,21 @@ d.addEventListener("DOMContentLoaded", () => {
   $modalMember.forEach((texto) => {
     texto.addEventListener("scroll", () => {
       if (texto.scrollTop > 150) {
+        $downArrows.forEach((flecha) => {
+          flecha.classList.add("desaparecer-flecha");
+        });
+      } else {
+        $downArrows.forEach((flecha) => {
+          flecha.classList.remove("desaparecer-flecha");
+        });
+      }
+    });
+  });
+
+  //LOGICA DE DESAPARECER LA FLECHA CUANDO SE SCROLLEA LA CAJA MODAL EN TABLET/DESKTOP
+  $textoScrolleableModal.forEach((texto) => {
+    texto.addEventListener("scroll", () => {
+      if (texto.scrollTop > 100) {
         $downArrows.forEach((flecha) => {
           flecha.classList.add("desaparecer-flecha");
         });
