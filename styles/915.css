@@ -54,6 +54,8 @@ header {
   z-index: 30;
   background-color: rgba(250, 250, 250, 0.75);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  -o-backdrop-filter: blur(3px);
 }
 
 #logo-mobile {
