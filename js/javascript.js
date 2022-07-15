@@ -214,6 +214,7 @@ d.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  //LOGICA DE DESAPARECER LA FLECHA CUANDO SE SCROLLEA LA CAJA TEAM-CHILD EN MOBILE
   $modalMember.forEach((texto) => {
     texto.addEventListener("scroll", () => {
       if (texto.scrollTop > 150) {
