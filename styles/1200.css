@@ -386,7 +386,8 @@ header {
 
 .arrow-down-modal {
   display: block;
-  width: 100%;
+  min-width: 480px;
+  max-width: 670px;
   height: 1px;
   position: relative;
   grid-column: 4/5;
