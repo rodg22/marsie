@@ -214,6 +214,20 @@ d.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  $modalMember.forEach((texto) => {
+    texto.addEventListener("scroll", () => {
+      if (texto.scrollTop > 150) {
+        $downArrows.forEach((flecha) => {
+          flecha.classList.add("desaparecer-flecha");
+        });
+      } else {
+        $downArrows.forEach((flecha) => {
+          flecha.classList.remove("desaparecer-flecha");
+        });
+      }
+    });
+  });
+
   // ----------------------- TOP BUTTON -------------------------
 
   $scrollTop.addEventListener("click", (e) => {

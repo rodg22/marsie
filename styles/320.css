@@ -444,6 +444,10 @@ header {
   left: -90px;
 }
 
+.desaparecer-flecha{
+  visibility: hidden;
+}
+
 .arrow-out-modal img{
   display: inline-block;
   width: 25px;
