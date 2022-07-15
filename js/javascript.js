@@ -5,6 +5,7 @@ const $main = d.querySelector("main");
 const $hamburgerClass = d.querySelector(".hamburger");
 const $menuClass = d.querySelector(".menu");
 const $linkMenu = d.querySelectorAll(".menu ul li a");
+const $linkFooter = d.querySelectorAll(".div-lista-footer ul li a");
 const $circleMenu = d.getElementById("menu-bg");
 const $blurMenu = d.getElementById("menu-blur");
 const $blurModal = d.getElementById("modal-backdrop");
@@ -69,6 +70,24 @@ d.addEventListener("DOMContentLoaded", () => {
     $blurMenu.classList.toggle("change-to-blured");
   });
 
+  // ----------------- LOGICA DEL SCROLL PARA OUR-VALUES ---------------------
+  let minimalWidth = 915;
+  let mediaQueries = window.matchMedia(`(min-width: ${minimalWidth}px)`);
+
+  const $idOurValues = d.getElementById("our-values");
+  const $idValue1 = d.getElementById("value-1");
+
+  const responsiveLink = (mediaquery) => {
+    if (mediaquery.matches) {
+      //Lo que pasa en Desktop
+      $idValue1.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      //Lo que pasa en Mobile
+      $idOurValues.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+  //-------------------------------------------------------------------------
+
   $linkMenu.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -79,6 +98,24 @@ d.addEventListener("DOMContentLoaded", () => {
       const $linkTo = document.getElementById(link.getAttribute("data-link"));
       if (link.getAttribute("href") === "#contact") {
         $linkTo.scrollIntoView({ behavior: "smooth", block: "end" });
+      } else {
+        if (link.getAttribute("href") === "#value-1") {
+          mediaQueries.addListener(responsiveLink);
+          responsiveLink(mediaQueries);
+        } else {
+          $linkTo.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    });
+  });
+
+  $linkFooter.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const $linkTo = document.getElementById(link.getAttribute("data-link"));
+      if (link.getAttribute("href") === "#value-1") {
+        mediaQueries.addListener(responsiveLink);
+        responsiveLink(mediaQueries);
       } else {
         $linkTo.scrollIntoView({ behavior: "smooth", block: "start" });
       }
