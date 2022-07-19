@@ -255,7 +255,7 @@ header {
 .not-visible {
   visibility: hidden;
   opacity: 0;
-  transition-property: visibility opacity;
+  transition-property: border visibility opacity;
   transition-duration: 1.1s;
   transition-delay: 0.3s;
   transition-timing-function: linear;
@@ -603,20 +603,22 @@ header {
   position: absolute;
   top: 80px;
   right: 0px;
-  z-index: -10;
   margin: 0 auto;
 }
 
 .member1-circle {
   border: 1px solid var(--amarillo);
+  z-index: -10;
 }
 
 .member2-circle {
   border: 1px solid var(--verde);
+  z-index: -10;
 }
 
 .member3-circle {
   border: 1px solid var(--celeste);
+  z-index: -10;
 }
 
 

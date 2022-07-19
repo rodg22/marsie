@@ -186,7 +186,21 @@ d.addEventListener("DOMContentLoaded", () => {
   });
 
   $hideFromIntersection.forEach((elementoOculto) => {
-    observador.observe(elementoOculto);
+    if (elementoOculto.classList.contains("member1-circle")) {
+      setTimeout(() => {
+        observador.observe(elementoOculto);
+      }, 2000);
+    } else if (elementoOculto.classList.contains("member2-circle")) {
+      setTimeout(() => {
+        observador.observe(elementoOculto);
+      }, 2000);
+    } else if (elementoOculto.classList.contains("member3-circle")) {
+      setTimeout(() => {
+        observador.observe(elementoOculto);
+      }, 2000);
+    } else {
+      observador.observe(elementoOculto);
+    }
   });
 
   //-----------------------------------------------------------
