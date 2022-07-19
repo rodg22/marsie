@@ -16,6 +16,10 @@ const $visible3 = d.querySelectorAll(".visible-3");
 const $visible4 = d.querySelectorAll(".visible-4");
 const $visible5 = d.querySelectorAll(".visible-5");
 const $visible6 = d.querySelectorAll(".visible-6");
+const $hideFromIntersection = d.querySelectorAll(".hide-from-intersect");
+const $founder1 = document.getElementById("founder1");
+const $founder2 = document.getElementById("founder2");
+const $founder3 = document.getElementById("founder3");
 const $teamMembers = d.querySelectorAll(".team-member");
 const $modalMember = d.querySelectorAll(".team-modal-child");
 const $modalArrows = d.querySelectorAll(".arrow-out-modal");
@@ -166,6 +170,27 @@ d.addEventListener("DOMContentLoaded", () => {
   });
 
   //--------------------------------------------------------------THE TEAM-----------------------------------------------------------------
+  //(APARICION DE LOS FOUNDERS EN MOBILE)
+  const cargarImagen = (entradas) => {
+    entradas.forEach((entrada) => {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add("now-visible");
+      }
+    });
+  };
+
+  const observador = new IntersectionObserver(cargarImagen, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  });
+
+  $hideFromIntersection.forEach((elementoOculto) => {
+    observador.observe(elementoOculto);
+  });
+
+  //-----------------------------------------------------------
+
   $members.forEach((member) => {
     member.addEventListener("mouseenter", () => {
       function contieneClase(nombreClase) {
