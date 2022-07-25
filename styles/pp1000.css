@@ -48,7 +48,7 @@ header {
   width: 150px;
 }
 
-#logo-mobile img{
+#logo-mobile img {
   width: 100%;
 }
 
@@ -83,7 +83,7 @@ h3 {
   font-size: 16px;
   line-height: 20px;
   margin: 0px 0 20px;
-  color: var(--celeste); 
+  color: var(--celeste);
 }
 
 p {
@@ -107,7 +107,6 @@ ul li {
 .indent {
   padding-left: 20px;
 }
-
 
 /*------------------------ GRID -----------------------*/
 
@@ -153,23 +152,24 @@ section:nth-of-type(3) {
   grid-template-rows: repeat(2, minmax(50px, auto));
 }
 
-section:nth-of-type(3) p, section:nth-of-type(3) ul {
+section:nth-of-type(3) p,
+section:nth-of-type(3) ul {
   grid-column: 3/4;
 }
 
-.br-only-desktop{
+.br-only-desktop {
   display: none;
 }
 
-.negative-margin{
+.negative-margin {
   margin-top: -20px;
 }
 
-.negative-margin2{
+.negative-margin2 {
   margin-top: -30px;
 }
 
-.negative-margin3{
+.negative-margin3 {
   margin-top: -4px;
 }
 
@@ -193,7 +193,8 @@ section:nth-of-type(5) {
   grid-template-rows: repeat(2, minmax(50px, auto));
 }
 
-section:nth-of-type(5) p, section:nth-of-type(5) ul {
+section:nth-of-type(5) p,
+section:nth-of-type(5) ul {
   grid-column: 3/4;
 }
 
@@ -253,7 +254,7 @@ footer {
   height: 40px;
 }
 
-.logo-footer img{
+.logo-footer img {
   width: 100%;
   max-width: 150px;
 }

@@ -18,10 +18,6 @@
   box-sizing: border-box;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 body {
   overflow-x: hidden;
   position: relative;
@@ -69,18 +65,18 @@ header {
   height: 150px;
 }
 
-#logo-mobile img{
+#logo-mobile img {
   width: 100%;
 }
 
 /*========= MENU =========*/
 
 .menu {
-    position: absolute;
-    right: 30px;
-    width: 100%;
-    transition: transform 0.3s;
-    z-index: 15;
+  position: absolute;
+  right: 30px;
+  width: 100%;
+  transition: transform 0.3s;
+  z-index: 15;
 }
 
 .menu ul {
@@ -92,14 +88,14 @@ header {
   text-align: center;
 }
 
-.menu ul li{
+.menu ul li {
   font-family: "GOTHAM-LIGHT";
   font-size: 14px;
   letter-spacing: 3px;
   line-height: 16px;
 }
 
-.menu ul li a{
+.menu ul li a {
   margin: 0 0 0 30px;
   padding: 25px 10px 15px;
   color: var(--negroTexto);
@@ -108,19 +104,19 @@ header {
   cursor: pointer;
 }
 
-.menu ul li:nth-child(1) a:hover{
+.menu ul li:nth-child(1) a:hover {
   color: var(--celeste);
 }
 
-.menu ul li:nth-child(2) a:hover{
+.menu ul li:nth-child(2) a:hover {
   color: var(--verde);
 }
 
-.menu ul li:nth-child(3) a:hover{
+.menu ul li:nth-child(3) a:hover {
   color: var(--rojo);
 }
 
-.menu ul li:nth-child(4) a:hover{
+.menu ul li:nth-child(4) a:hover {
   color: var(--amarillo);
 }
 
@@ -137,7 +133,7 @@ header {
   font-weight: bold;
   line-height: 26px;
   position: relative;
-  transform: translateY(35%)
+  transform: translateY(35%);
 }
 
 .intro::before {
@@ -256,11 +252,11 @@ header {
   position: relative;
 }
 
-.circling-div-p p{
+.circling-div-p p {
   margin-bottom: 10px;
 }
 
-.p-circle .span-negrita{
+.p-circle .span-negrita {
   font-weight: 1000;
   color: black;
 }
@@ -353,7 +349,7 @@ header {
   grid-row: 1/2;
 }
 
-.arrow-out-modal img{
+.arrow-out-modal img {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -375,7 +371,7 @@ header {
   transition: all 0.5s;
 }
 
-.arrow-down-modal img{
+.arrow-down-modal img {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -384,7 +380,7 @@ header {
   left: 47%;
 }
 
-.desaparecer-flecha{
+.desaparecer-flecha {
   opacity: 0;
   visibility: hidden;
 }
@@ -418,7 +414,7 @@ header {
   transition-timing-function: linear;
 }
 
-.team-modal-child > a{
+.team-modal-child > a {
   grid-column: 2/3;
   grid-row: 4/5;
   align-self: flex-start;
@@ -430,16 +426,16 @@ header {
   backdrop-filter: blur(2px);
 }
 
-.team-modal-child > span{
+.team-modal-child > span {
   color: white;
   margin-bottom: 25px;
 }
 
-.imagen-modal-desktop img{
+.imagen-modal-desktop img {
   width: 75%;
 }
 
-.team-modal-child h4{
+.team-modal-child h4 {
   font-size: 30px;
   font-family: "GOTHAM-MEDIUM";
   margin-bottom: 10px;
@@ -448,18 +444,7 @@ header {
   grid-row: 3/4;
 }
 
-.team-modal-child h4::before{
-  content: "";
-  background: url(../assets/images/founder-agus.png) center center no-repeat;
-  background-size: cover;
-  width: 362px;
-  height: 459px;
-  text-align: center;
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.team-modal-child p{
+.team-modal-child p {
   font-size: 16px;
   font-family: "GOTHAM-LIGHT";
   line-height: 17px;
@@ -481,7 +466,7 @@ header {
   max-width: 670px;
 }
 
-.team-modal-child a{
+.team-modal-child a {
   font-size: 16px;
   font-family: "GOTHAM-LIGHT";
   line-height: 17px;
@@ -530,7 +515,7 @@ header {
   -webkit-backdrop-filter: blur(5px);
 }
 
-.change-to-blured-modal{
+.change-to-blured-modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -567,7 +552,9 @@ header {
   display: block;
 }
 
-.member1, .member2, .member3 {
+.member1,
+.member2,
+.member3 {
   position: relative;
   margin-bottom: 40px;
 }
@@ -594,7 +581,6 @@ header {
 .member3-circle {
   border: 1px solid var(--celeste);
 }
-
 
 /*---------------------- IMAGEN MAR ----------------------*/
 
@@ -686,7 +672,7 @@ header {
   top: 5px;
 }
 
-.values-container h3{
+.values-container h3 {
   font-family: "GOTHAM-MEDIUM";
   font-size: 20px;
   margin-bottom: 0px;
@@ -695,7 +681,7 @@ header {
   color: var(--rojo);
 }
 
-.values-item{
+.values-item {
   position: absolute;
   min-width: 318px;
 }
@@ -725,14 +711,14 @@ header {
   left: 510px;
 }
 
-.values-item p:nth-of-type(2){
+.values-item p:nth-of-type(2) {
   font-family: "GOTHAM-LIGHT";
   font-size: 16px;
   text-align: left;
   color: var(--negroTexto);
 }
 
-.italic{
+.italic {
   font-family: "GOTHAM-LIGHTITALIC";
   text-align: left;
   margin-bottom: 10px;
@@ -823,24 +809,24 @@ footer {
   align-content: center;
 }
 
-.logo-footer img{
+.logo-footer img {
   width: 100%;
   max-width: 150px;
 }
 
-.div-lista-footer{
+.div-lista-footer {
   display: inline-block;
   min-width: 500px;
   text-align: center;
 }
 
-.div-lista-footer ul{
+.div-lista-footer ul {
   display: flex;
   justify-content: flex-end;
   align-content: center;
 }
 
-.div-lista-footer ul li{
+.div-lista-footer ul li {
   list-style: none;
   padding: 0px 15px;
   margin-top: 15px;
@@ -850,7 +836,7 @@ footer {
   letter-spacing: 2px;
 }
 
-.div-lista-footer ul li a{
+.div-lista-footer ul li a {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
@@ -881,7 +867,8 @@ footer p {
   padding-left: 20px;
 }
 
-.div-lista-footer ul li a:hover ,.privacy-policy:hover {
+.div-lista-footer ul li a:hover,
+.privacy-policy:hover {
   color: #a8a1a1;
 }
 
